@@ -24,7 +24,7 @@ return (
             <div className="product-like"> {like}</div>
         </CardContent>
         <CardActions className="btn-gtn">
-            <Button variant="contained" color="inherit" className="btn-gtn-wrap">GO TO NEWS</Button>
+            <Button variant="contained" color="inherit" className="btn-gtn-wrap">LISTEN NOW</Button>
         </CardActions>
     </Card>
 )
