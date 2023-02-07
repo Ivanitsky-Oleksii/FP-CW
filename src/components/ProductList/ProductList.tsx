@@ -23,16 +23,18 @@ return (
         </Typography>
 
         <Grid container spacing={5}>
-            {productsArray.map(({title,description,data,like}: ProductProps) => (
-                <Grid item xs={12} sm={6} md={4}>
-                    <ProductListItem
-                        title={title}
-                        description={description}
-                        data={data}
-                        like={like}
-                    />
-                </Grid>
-            ))}
+            {productsArray.map(
+                ({ title, description, data, like }: ProductProps) => (
+                    <Grid item xs={12} sm={6} md={4}>
+                        <ProductListItem
+                            title={title}
+                            description={description}
+                            data={data}
+                            like={like}
+                        />
+                    </Grid>
+                )
+            )}
         </Grid>
     </>
 )
