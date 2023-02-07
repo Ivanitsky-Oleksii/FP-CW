@@ -1,0 +1,46 @@
+.card-content{
+font-family: 'Orbitron', sans-serif;
+background-color: rgba(0, 0, 0, 0.7);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+.typography-news{
+font-family: 'Orbitron', sans-serif;
+color: black;
+font-size: 35px;
+padding: 30px;
+}
+.product-title{
+font-size: 22px;
+color: red;
+padding-bottom: 20px;
+text-align: center;
+}
+.product-desc{
+color: white;
+font-size: 15px;
+}
+.product-data{
+color: rgba(255, 255, 255, 0.3);
+font-size: 18px;
+padding-top:15px ;
+}
+.product-like{
+color: white;
+font-size: 20px;
+padding-top: 20px;
+}
+.btn-gtn{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-top: 1px solid red;
+}
+.btn-gtn-wrap{
+font-family: 'Orbitron', sans-serif;
+color: red
+
+}

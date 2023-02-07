@@ -1,7 +1,14 @@
-import './Main.scss'
+import { Container } from '@mui/material'
+import Home from 'pages/Home/Home'
 
 type Props = {}
 const Main = (props: Props) => {
-    return <div className="main">Main</div>
+    return (
+    <Container sx={{
+        padding:'20px 0'
+    }} >
+    <Home/>
+    </Container>
+    )
 }
 export default Main
