@@ -14,7 +14,7 @@ type Props = {}
 const Header = (props: Props) => {
     return (
         <AppBar position="static" className="app-bar">
-            <Container >
+            <Container>
                 <Toolbar>
                     <IconButton
                         size="large"
@@ -25,9 +25,7 @@ const Header = (props: Props) => {
                     >
                         <Logo />
 
-
                         <Menu />
-
                     </IconButton>
                 </Toolbar>
             </Container>
