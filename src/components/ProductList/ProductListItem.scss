@@ -5,6 +5,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+padding: 0px;
 }
 .typography-news{
 font-family: 'Orbitron', sans-serif;
@@ -46,4 +47,12 @@ font-family: 'Orbitron', sans-serif;
 color: red;
 background-color: rgba(255, 255, 255, 0.2);
 border-radius: 7px ;
+}
+.product-img{
+    text-align: center;
+    margin-top: 0px;
+    img {
+        width: 650px;
+        height: auto;
+    }
 }

@@ -7,17 +7,20 @@ type Props = {
     description:string
     data:string
     like:string
+    image:string
 }
 const ProductListItem = ({
     title,
     description,
     data,
-    like
+    like,
+    image,
     
 }  : Props) => {
 return (
     <Card variant="outlined">
         <CardContent className="card-content">
+            <div className="product-img"><img src={image} alt="fake page" /></div>
             <div className="product-title">{title}</div>
             <div className="product-desc">{description}</div>
             <div className="product-data"> {data}</div>

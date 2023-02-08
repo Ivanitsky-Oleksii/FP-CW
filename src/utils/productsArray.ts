@@ -4,6 +4,7 @@ type Product = {
     description: string
     data: string
     like: string
+    image:string
 }
 
 const productsArray: Product[] = [
@@ -16,6 +17,7 @@ const productsArray: Product[] = [
         data: 'February 3, 2023',
 
         like: 'Like',
+        image:"/images/1.jpg",
     },
     {
         id:2,
@@ -26,6 +28,7 @@ const productsArray: Product[] = [
         data: 'February 2, 2023',
 
         like: 'Like',
+        image:"/images/2.jpg",
     },
     {
         id:3,
@@ -36,6 +39,7 @@ const productsArray: Product[] = [
         data: 'February 1, 2023',
 
         like: 'Like',
+        image:"/images/3.jpg",
     },
     {
         id:4,
@@ -46,6 +50,7 @@ const productsArray: Product[] = [
         data: 'January 27, 2023',
 
         like: 'Like',
+        image:"/images/4.jpg",
     },
     {
         id:5,
@@ -56,6 +61,7 @@ const productsArray: Product[] = [
         data: 'January 20, 2023',
 
         like: 'Like',
+        image:"/images/5.jpg",
     },
     {
         id:6,
@@ -66,6 +72,7 @@ const productsArray: Product[] = [
         data: 'January 16, 2023',
 
         like: 'Like',
+        image:"/images/6.jpg",
     },
 ] 
 export default productsArray
