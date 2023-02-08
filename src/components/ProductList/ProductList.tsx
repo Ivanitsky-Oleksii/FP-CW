@@ -20,14 +20,13 @@ return (
         <Grid container spacing={5}>
             {productsArray.map(
                 (
-                    { id,title, description, data, like, image },
+                    { id,title, description, data, image },
                     i) => (
                     <Grid item xs={12} sm={6} md={4} key={id}>
                         <ProductListItem
                             title={title}
                             description={description}
                             data={data}
-                            like={like}
                             image={image}
                         />
                     </Grid>

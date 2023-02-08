@@ -3,7 +3,6 @@ type Product = {
     title: string
     description: string
     data: string
-    like: string
     image:string
 }
 
@@ -16,7 +15,7 @@ const productsArray: Product[] = [
 
         data: 'February 3, 2023',
 
-        like: 'Like',
+        
         image:"/images/1.jpg",
     },
     {
@@ -27,7 +26,7 @@ const productsArray: Product[] = [
 
         data: 'February 2, 2023',
 
-        like: 'Like',
+    
         image:"/images/2.jpg",
     },
     {
@@ -38,7 +37,6 @@ const productsArray: Product[] = [
 
         data: 'February 1, 2023',
 
-        like: 'Like',
         image:"/images/3.jpg",
     },
     {
@@ -49,7 +47,6 @@ const productsArray: Product[] = [
 
         data: 'January 27, 2023',
 
-        like: 'Like',
         image:"/images/4.jpg",
     },
     {
@@ -60,7 +57,6 @@ const productsArray: Product[] = [
 
         data: 'January 20, 2023',
 
-        like: 'Like',
         image:"/images/5.jpg",
     },
     {
@@ -70,8 +66,7 @@ const productsArray: Product[] = [
         description: 'RELEASES',
 
         data: 'January 16, 2023',
-
-        like: 'Like',
+        
         image:"/images/6.jpg",
     },
 ] 
