@@ -16,5 +16,11 @@
         "title": "Intro",
         "image":"/images/9.jpg"
         
-    } 
+    },
+    {
+        "id": 4,
+        "title": "Intro",
+        "image": "/images/10.jpg"
+    }  
+
 ] 
