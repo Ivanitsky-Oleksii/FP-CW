@@ -4,12 +4,7 @@ import './ProductListItem.scss'
 import productsArray from "utils/productsArray"
 
 type Props = {}
-type ProductProps = {
-    title: string
-    description: string
-    data: string
-    like: string
-}
+
 const ProductList = (props: Props) => {
 return (
     <>
@@ -24,8 +19,10 @@ return (
 
         <Grid container spacing={5}>
             {productsArray.map(
-                ({ title, description, data, like }: ProductProps) => (
-                    <Grid item xs={12} sm={6} md={4}>
+                (
+                    { id,title, description, data, like },
+                    i) => (
+                    <Grid item xs={12} sm={6} md={4} key={id}>
                         <ProductListItem
                             title={title}
                             description={description}
