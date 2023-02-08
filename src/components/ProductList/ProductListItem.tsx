@@ -31,7 +31,7 @@ return (
             <div className="product-data"> {data}</div>
             <div className="product-checkbox"><Checkbox  icon={<FavoriteBorder />} checkedIcon={<Favorite />} /><Checkbox icon={<BookmarkBorderIcon />}checkedIcon={<BookmarkIcon />}/></div>
             <Stack spacing={1}>
-            <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+            <Rating name="half-rating" defaultValue={0} precision={1} />
             </Stack>
         </CardContent>
         <CardActions className="btn-gtn">
