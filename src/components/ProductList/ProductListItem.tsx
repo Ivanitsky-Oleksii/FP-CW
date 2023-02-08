@@ -5,6 +5,8 @@ import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import Favorite from '@mui/icons-material/Favorite';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
+import Rating from '@mui/material/Rating';
+import Stack from '@mui/material/Stack';
 
 
 type Props = {
@@ -28,6 +30,9 @@ return (
             <div className="product-desc">{description}</div>
             <div className="product-data"> {data}</div>
             <div className="product-checkbox"><Checkbox  icon={<FavoriteBorder />} checkedIcon={<Favorite />} /><Checkbox icon={<BookmarkBorderIcon />}checkedIcon={<BookmarkIcon />}/></div>
+            <Stack spacing={1}>
+            <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+            </Stack>
         </CardContent>
         <CardActions className="btn-gtn">
             <Button variant="contained" color="inherit" className="btn-gtn-wrap">LISTEN NOW</Button>
