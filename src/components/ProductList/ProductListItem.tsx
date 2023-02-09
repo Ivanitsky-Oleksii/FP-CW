@@ -29,7 +29,7 @@ return (
             <div className="product-title">{title}</div>
             <div className="product-desc">{description}</div>
             <div className="product-data"> {data}</div>
-            <div className="product-checkbox"><Checkbox  icon={<FavoriteBorder />} checkedIcon={<Favorite />} /><Checkbox icon={<BookmarkBorderIcon />}checkedIcon={<BookmarkIcon />}/></div>
+            <div className="product-checkbox"><Checkbox  icon={<FavoriteBorder />} checkedIcon={<Favorite />}/></div>
             <Stack spacing={1}>
             <Rating name="half-rating" defaultValue={0} precision={1} />
             </Stack>
