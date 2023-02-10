@@ -1,7 +1,7 @@
 import Carousel from 'react-material-ui-carousel'
 import Item from './Item'
 import sliderArray from 'utils/sliderArray.json'
-import { Container } from '@mui/system'
+
 
 
 function Carousels()
