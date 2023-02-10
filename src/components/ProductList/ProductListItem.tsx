@@ -35,7 +35,8 @@ return (
             <Stack spacing={1}>
             <Rating name="half-rating" defaultValue={0} precision={1} 
             sx={{
-            color:"white"
+            color:"white",
+            paddingBottom:"15px"
             }} />
             </Stack>
         </CardContent>
