@@ -27,9 +27,16 @@ return (
             <div className="product-title">{title}</div>
             <div className="product-desc">{description}</div>
             <div className="product-data"> {data}</div>
-            <div className="product-checkbox"><Checkbox  icon={<FavoriteBorder />} checkedIcon={<Favorite />}/></div>
+            <div className="product-checkbox"><Checkbox  icon={<FavoriteBorder sx={{
+            color:"white"
+            }} />} checkedIcon={<Favorite sx={{
+                color:"red"
+                }} />}/></div>
             <Stack spacing={1}>
-            <Rating name="half-rating" defaultValue={0} precision={1} />
+            <Rating name="half-rating" defaultValue={0} precision={1} 
+            sx={{
+            color:"white"
+            }} />
             </Stack>
         </CardContent>
         <CardActions className="btn-gtn">
