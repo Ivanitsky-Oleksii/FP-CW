@@ -1,10 +1,4 @@
-import AppBar from '@mui/material/AppBar'
-import Toolbar from '@mui/material/Toolbar'
-import { Container } from '@mui/material'
 import 'container/Footer/Footer.scss'
-
-
-
 
 type Props = {}
 
