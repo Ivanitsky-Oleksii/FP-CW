@@ -10,15 +10,10 @@ type Props = {}
 
 const Footer = (props: Props) => {
     return (
-        <AppBar position="static" className="footer">
-            <Container>
-                <Toolbar>
-            <>
+
+            <div className='footer'>
             © Copyright 2023 
-            </>
-                </Toolbar>
-            </Container>
-        </AppBar>
+            </div>
     )
 }
 export default Footer
