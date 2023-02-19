@@ -1,10 +1,15 @@
 import Footer from "container/Footer/Footer"
 import Header from "container/Header/Header"
-import Main from "container/Main/Main"
 import CssBaseline from '@mui/material/CssBaseline'
 import { StyledEngineProvider } from '@mui/material/styles'
 import Carousel from "components/Carousel/Carousel"
-
+import {Route,Routes} from 'react-router-dom'
+import {Container} from '@mui/system'
+import Home from "pages/Home/Home";
+import News from "pages/About/About"
+import Releases from "pages/Releases/Releases"
+import Radio from "pages/Radio/Radio"
+import About from "pages/About/About"
 
 
 type Props = {}
@@ -15,7 +20,15 @@ const App = (props: Props) => {
             <CssBaseline />
             <Header />
             <Carousel/>
-            <Main />
+            <Container className="main-container"
+            sx={{padding: '0px 0',}}>
+    <Routes>
+    <Route path='/' element={<Home/>}/>
+    <Route path="releases" element={<Releases/>}/>
+    <Route path="radio" element={<Radio/>}/>
+    <Route path="about" element={<About/>}/>
+    </Routes>
+    </Container>
             <Footer />
         </StyledEngineProvider>
     )
