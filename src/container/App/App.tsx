@@ -6,7 +6,6 @@ import Carousel from "components/Carousel/Carousel"
 import {Route,Routes} from 'react-router-dom'
 import {Container} from '@mui/system'
 import Home from "pages/Home/Home";
-import News from "pages/About/About"
 import Releases from "pages/Releases/Releases"
 import Radio from "pages/Radio/Radio"
 import About from "pages/About/About"
