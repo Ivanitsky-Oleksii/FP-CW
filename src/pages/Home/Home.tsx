@@ -1,9 +1,6 @@
 import ProductList from "components/ProductList/ProductList"
 
-
-
 type Props = {}
-
 
 const Home = (props: Props) => {
 return (
