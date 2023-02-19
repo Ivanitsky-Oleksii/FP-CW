@@ -14,7 +14,7 @@ return (
             component="h4"
             className="typography-news"
         >
-            NEWS
+            
         </Typography>
 
         <Grid container spacing={5}>

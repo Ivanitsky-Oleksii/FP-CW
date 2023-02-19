@@ -4,6 +4,7 @@ import sliderArray from 'utils/sliderArray.json'
 
 
 
+
 function Carousels()
 {
     return (
@@ -11,6 +12,7 @@ function Carousels()
             {
                 sliderArray.map( item => <Item key={item.id} item={item} /> )
             }
+            
         </Carousel>
     )
 }
