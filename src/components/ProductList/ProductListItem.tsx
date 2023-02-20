@@ -29,7 +29,7 @@ return (
             <div className="product-data"> {data}</div>
             <div className="product-checkbox"><Checkbox  icon={<FavoriteBorder sx={{color:"white"}} />} checkedIcon={<Favorite sx={{color:"red"}} />}/></div>
             <Stack spacing={1}>
-            <Rating name="half-rating" defaultValue={0} precision={1} 
+            <Rating name="half-rating" defaultValue={2} precision={1} 
             sx={{
             color:"white",
             paddingBottom:"15px"
@@ -37,7 +37,7 @@ return (
             </Stack>
         </CardContent>
         <CardActions className="btn-gtn">
-            <Button variant="contained" color="inherit" className="btn-gtn-wrap">LISTEN NOW</Button>
+            <Button variant="contained" color="inherit" className="btn-gtn-wrap">MORE INFO</Button>
         </CardActions>
     </Card>
 )

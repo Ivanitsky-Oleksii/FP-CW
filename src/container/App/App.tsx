@@ -6,9 +6,10 @@ import Carousel from "components/Carousel/Carousel"
 import {Route,Routes} from 'react-router-dom'
 import {Container} from '@mui/system'
 import Home from "pages/Home/Home";
-import Releases from "pages/Releases/Releases"
+import Favorite from "pages/Favorite/Favorite"
 import Radio from "pages/Radio/Radio"
 import About from "pages/About/About"
+
 
 
 type Props = {}
@@ -23,7 +24,7 @@ const App = (props: Props) => {
             sx={{padding: '0px 0',}}>
     <Routes>
     <Route path='/' element={<Home/>}/>
-    <Route path="releases" element={<Releases/>}/>
+    <Route path="favorite" element={<Favorite/>}/>
     <Route path="radio" element={<Radio/>}/>
     <Route path="about" element={<About/>}/>
     </Routes>

@@ -9,9 +9,9 @@ type Product = {
 const productsArray: Product[] = [
     {
         id:1,
-        title: 'OUT NOW : Gordon Tennant  "The Gods Disco" ',
+        title: 'Gordon Tennant  "The Gods Disco" ',
 
-        description: 'RELEASES',
+        description: 'HOT NEW',
 
         data: 'February 3, 2023',
 
@@ -20,9 +20,9 @@ const productsArray: Product[] = [
     },
     {
         id:2,
-        title: 'OUT NOW : Doppenberg "Someday" ',
+        title: 'Doppenberg "Someday" ',
 
-        description: 'RELEASES',
+        description: 'HOT NEW',
 
         data: 'February 2, 2023',
 
@@ -31,9 +31,9 @@ const productsArray: Product[] = [
     },
     {
         id:3,
-        title: 'OUT NOW : Armin van Buuren "Dayglow" ',
+        title: 'Armin van Buuren "Dayglow" ',
 
-        description: 'RELEASES',
+        description: 'HOT NEW',
 
         data: 'February 1, 2023',
 
@@ -41,9 +41,9 @@ const productsArray: Product[] = [
     },
     {
         id:4,
-        title: 'OUT NOW : Kolonie "Distant Dreams" ',
+        title: 'Kolonie "Distant Dreams" ',
 
-        description: 'RELEASES',
+        description: 'HOT NEW',
 
         data: 'January 27, 2023',
 
@@ -51,9 +51,9 @@ const productsArray: Product[] = [
     },
     {
         id:5,
-        title: 'OUT NOW : UDM  "Colorful Sunrise" ',
+        title: 'UDM  "Colorful Sunrise" ',
 
-        description: 'RELEASES',
+        description: 'HOT NEW',
 
         data: 'January 20, 2023',
 
@@ -61,9 +61,9 @@ const productsArray: Product[] = [
     },
     {
         id:6,
-        title: 'OUT NOW : Scorz & Malou  "Love Like Were Dying" ',
+        title: 'Scorz & Malou  "Love Like Were Dying" ',
 
-        description: 'RELEASES',
+        description: 'HOT NEW',
 
         data: 'January 16, 2023',
         
