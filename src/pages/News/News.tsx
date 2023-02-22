@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom'
 import Rating from '@mui/material/Rating';
 
 
+
 type Props = {}
 const News = (props: Props) => {
     return (
@@ -31,7 +32,7 @@ const News = (props: Props) => {
                                 data={data}
                                 image={image}/>
 <Stack direction="row-reverse"justifyContent="center"alignItems="center"spacing={5} margin="10px">
-<Button className='back-btn' color="inherit"><Link className='back-btn' to="https://asot749.lnk.to/SomedayAW">LISTEN NOW</Link></Button>
+<Button color="inherit"><Link className='back-btn' to="https://asot749.lnk.to/SomedayAW">LISTEN NOW</Link></Button>
 </Stack>
 
                             
@@ -48,7 +49,7 @@ const News = (props: Props) => {
             
 
             <Stack direction="row-reverse"justifyContent="center"alignItems="center"spacing={5} margin="10px">
-<Button className='back-btn' color="inherit"><Link className='back-btn' to="/">BACK TO HOME</Link></Button></Stack>
+<Button color="inherit"><Link className='back-btn' to="/">BACK TO HOME</Link></Button></Stack>
         </>
     )
 }
