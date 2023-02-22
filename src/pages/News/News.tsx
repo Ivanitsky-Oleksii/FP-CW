@@ -32,24 +32,13 @@ const News = (props: Props) => {
                                 data={data}
                                 image={image}/>
 <Stack direction="row-reverse"justifyContent="center"alignItems="center"spacing={5} margin="10px">
-<Button color="inherit"><Link className='back-btn' to="https://asot749.lnk.to/SomedayAW">LISTEN NOW</Link></Button>
+<Button color="inherit"><Link to="https://asot749.lnk.to/SomedayAW">LISTEN NOW</Link></Button>
 </Stack>
-
-                            
-
-                            <Stack direction="row-reverse"justifyContent="center"alignItems="center"spacing={5} margin="10px">
-                            <Rating name="half-rating" defaultValue={2} precision={1} sx={{color:"white",paddingBottom:"15px"}} /></Stack>
-                        </Grid>
-                    )
-                )}
-                
-            </Grid>
-            
-
-            
-
-            <Stack direction="row-reverse"justifyContent="center"alignItems="center"spacing={5} margin="10px">
-<Button color="inherit"><Link className='back-btn' to="/">BACK TO HOME</Link></Button></Stack>
+<Stack direction="row-reverse"justifyContent="center"alignItems="center"spacing={5} margin="10px">
+<Rating name="half-rating" defaultValue={2} precision={1} sx={{color:"white",paddingBottom:"15px"}} /></Stack>
+</Grid>))}</Grid>
+<Stack direction="row-reverse"justifyContent="center"alignItems="center"spacing={5} margin="10px">
+<Button color="inherit"><Link  to="/">BACK TO HOME</Link></Button></Stack>
         </>
     )
 }
