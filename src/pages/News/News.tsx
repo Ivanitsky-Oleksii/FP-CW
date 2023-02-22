@@ -30,8 +30,11 @@ const News = (props: Props) => {
                                 title={title}
                                 description={description}
                                 data={data}
-                                image={image}
-                            />
+                                image={image}/>
+<Stack direction="row-reverse"justifyContent="center"alignItems="center"spacing={5} margin="10px">
+<Button className='back-btn' color="inherit"><Link className='back-btn' to="https://asot749.lnk.to/SomedayAW">LISTEN NOW</Link></Button>
+</Stack>
+
                             
 
                             <Stack direction="row-reverse"justifyContent="center"alignItems="center"spacing={5} margin="10px">
