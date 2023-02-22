@@ -23,7 +23,7 @@ const News = (props: Props) => {
             <Grid container spacing={1}>
                 {productsArray4.map(
                     (
-                        { id,title, description, data, image,url },
+                        { id,title, description, data, image },
                         i) => (
                         <Grid item xs={12} sm={12} md={15} key={id}>
                             <ProductListItem
@@ -38,12 +38,7 @@ const News = (props: Props) => {
                             
 
                             <Stack direction="row-reverse"justifyContent="center"alignItems="center"spacing={5} margin="10px">
-                            <Rating name="half-rating" defaultValue={2} precision={1} 
-                            
-            sx={{
-            color:"white",
-            paddingBottom:"15px"
-            }} /></Stack>
+                            <Rating name="half-rating" defaultValue={2} precision={1} sx={{color:"white",paddingBottom:"15px"}} /></Stack>
                         </Grid>
                     )
                 )}
