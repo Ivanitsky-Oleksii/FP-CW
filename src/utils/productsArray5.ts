@@ -4,7 +4,6 @@ type Product = {
     description: string
     data: string
     image:string
-    url:string
 }
 
 const productsArray2: Product[] = [
@@ -18,7 +17,6 @@ const productsArray2: Product[] = [
 
         
         image:"/images/27.jpg",
-        url:""
     },
     {
         id:2,
@@ -30,7 +28,6 @@ const productsArray2: Product[] = [
 
     
         image:"/images/13.jpg",
-        url:""
     },
     {
         id:3,
@@ -41,7 +38,6 @@ const productsArray2: Product[] = [
         data: 'February 1, 2023',
 
         image:"/images/26.jpg",
-        url:""
     },
     {
         id:4,
@@ -52,7 +48,6 @@ const productsArray2: Product[] = [
         data: 'July 1, 2022',
 
         image:"/images/28.jpg",
-        url:""
     },
     {
         id:5,
@@ -63,7 +58,6 @@ const productsArray2: Product[] = [
         data: 'December 14, 2022',
 
         image:"/images/24.jpg",
-        url:""
     },
     {
         id:6,
@@ -74,7 +68,6 @@ const productsArray2: Product[] = [
         data: 'November 18, 2022',
         
         image:"/images/25.jpg",
-        url:""
     },
 ] 
 export default productsArray2

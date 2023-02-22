@@ -1,22 +1,39 @@
 
-.radio-btn{
-    color: red;
-    text-decoration: none;
-}
 .btn-1{
     
     left:-15px;
     top: 2px;
     font-size: 14px;
     font-family: 'Orbitron', sans-serif;
-    text-shadow: 0px 2px 3px rgb(255, 0, 0);
+    text-shadow: 0px 2px 3px rgb(255, 255, 255);
     text-decoration: none;
+    color: white;
 }
 .btn-2{
-    left: -15px;
+    left:-15px;
     top: 2px;
     font-size: 14px;
     font-family: 'Orbitron', sans-serif;
     text-shadow: 0px 2px 3px rgb(255, 255, 255);
     text-decoration: none;
+    color: white;
+}
+.btn-3{
+    left:-260px;
+    top: 25px;
+    font-size: 14px;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0px 2px 3px rgb(255, 255, 255);
+    text-decoration: none;
+    color: white;
+}
+.btn-4{
+    color:red; 
+    left:-255px;
+    top: 25px;
+    font-size: 14px;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0px 2px 3px rgb(255, 0, 0);
+    text-decoration: none;
+
 }

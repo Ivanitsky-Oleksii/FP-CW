@@ -4,6 +4,7 @@ type Product = {
     description: string
     data: string
     image:string
+    url:string
 }
 
 const productsArray: Product[] = [
@@ -17,6 +18,7 @@ const productsArray: Product[] = [
 
         
         image:"/images/1.jpg",
+        url:"https://wao138377.lnk.to/TheGodsDiscoAW"
     },
     {
         id:2,
@@ -28,6 +30,7 @@ const productsArray: Product[] = [
 
     
         image:"/images/2.jpg",
+        url:"https://asot749.lnk.to/SomedayAW"
     },
     {
         id:3,
@@ -38,6 +41,7 @@ const productsArray: Product[] = [
         data: 'February 1, 2023',
 
         image:"/images/3.jpg",
+        url:"https://avbsc.lnk.to/DayglowAW"
     },
     {
         id:4,
@@ -48,6 +52,7 @@ const productsArray: Product[] = [
         data: 'January 27, 2023',
 
         image:"/images/4.jpg",
+        url:"https://asot743.lnk.to/DistantDreamsAW",
     },
     {
         id:5,
@@ -58,6 +63,7 @@ const productsArray: Product[] = [
         data: 'January 20, 2023',
 
         image:"/images/5.jpg",
+        url:"https://wao138375.lnk.to/ColorfulSunriseAW",
     },
     {
         id:6,
@@ -68,6 +74,7 @@ const productsArray: Product[] = [
         data: 'January 16, 2023',
         
         image:"/images/6.jpg",
+        url:"https://armd1704.lnk.to/LoveLikeWereDyingAW",
     },
 ] 
 export default productsArray

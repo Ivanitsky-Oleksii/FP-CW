@@ -20,10 +20,12 @@ color: red;
 padding-bottom: 20px;
 text-align: center;
 text-shadow: 0px 3px 3px rgb(0, 0, 0);
+
 }
 .product-desc{
 color: white;
 font-size: 12px;
+margin: 20px;
 }
 .product-data{
 color: rgba(255, 255, 255, 0.3);
@@ -50,4 +52,31 @@ border-radius: 7px ;
         width: 650px;
         height: auto;
     }
+}
+.news-btn{
+    font-size: 35px;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0px 2px 3px rgb(94, 94, 94);
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+.podc-btn{
+    font-size: 35px;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0px 2px 3px rgb(94, 94, 94);
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+.radio-botn{
+    font-size: 35px;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0px 2px 3px rgb(94, 94, 94);
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+.back-btn{
+    color:red;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
 }
