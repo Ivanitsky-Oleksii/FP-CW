@@ -1,10 +1,9 @@
-import { Typography,Grid, Button } from "@mui/material"
+import { Typography,Grid, Button,Stack } from "@mui/material"
 import ProductListItem from "components/ProductList/ProductListItem"
 import 'components/ProductList/ProductListItem.scss'
 import productsArray4 from "utils/productsArray4"
 import {Link} from 'react-router-dom'
 import Rating from '@mui/material/Rating';
-import Stack from '@mui/material/Stack';
 
 
 type Props = {}
@@ -32,7 +31,7 @@ const News = (props: Props) => {
                                 data={data}
                                 image={image}/>
 <Stack direction="row-reverse"justifyContent="center"alignItems="center"spacing={5} margin="10px">
-<Button className='back-btn' color="inherit"><Link className='back-btn' to="/">LISTEN NOW</Link></Button>
+<Button className='back-btn' color="inherit"><Link className='back-btn' to="https://asot749.lnk.to/SomedayAW">LISTEN NOW</Link></Button>
 </Stack>
 
                             
