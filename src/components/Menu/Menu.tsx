@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 
 type Props = {}
-const linkStyle = {textDecoration: 'none',color:"white"}
+// const linkStyle = {textDecoration: 'none',color:"white"}
 const Menu = (props: Props) => {
 return (
     <>
