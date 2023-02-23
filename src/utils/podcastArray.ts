@@ -8,7 +8,7 @@ type Product = {
     link:string
 }
 
-const productsArray2: Product[] = [
+const podcastArray: Product[] = [
     {
         id:1,
         title: 'PODCAST: Laura van Dam ',
@@ -84,4 +84,4 @@ const productsArray2: Product[] = [
         link:"ppage6"
     },
 ] 
-export default productsArray2
+export default podcastArray
