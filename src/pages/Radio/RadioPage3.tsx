@@ -10,10 +10,10 @@ import {
 import 'components/ProductList/ProductListItem.scss'
 import rp3Array from 'utils/rp3Array'
 import { Link } from 'react-router-dom'
-import Rating from '@mui/material/Rating'
-import Favorite from '@mui/icons-material/Favorite'
-import Checkbox from '@mui/material/Checkbox'
-import FavoriteBorder from '@mui/icons-material/FavoriteBorder'
+// import Rating from '@mui/material/Rating'
+// import Favorite from '@mui/icons-material/Favorite'
+// import Checkbox from '@mui/material/Checkbox'
+// import FavoriteBorder from '@mui/icons-material/FavoriteBorder'
 
 type Props = {}
 const RadioPage3 = (props: Props) => {

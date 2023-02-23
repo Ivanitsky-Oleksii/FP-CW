@@ -3,10 +3,10 @@ import ProductListItem from 'components/ProductList/ProductListItem'
 import 'components/ProductList/ProductListItem.scss'
 import newsArray from 'utils/newsArray'
 import { Link } from 'react-router-dom'
-import Rating from '@mui/material/Rating'
-import Favorite from '@mui/icons-material/Favorite'
-import Checkbox from '@mui/material/Checkbox'
-import FavoriteBorder from '@mui/icons-material/FavoriteBorder'
+// import Rating from '@mui/material/Rating'
+// import Favorite from '@mui/icons-material/Favorite'
+// import Checkbox from '@mui/material/Checkbox'
+// import FavoriteBorder from '@mui/icons-material/FavoriteBorder'
 
 type Props = {}
 const News = (props: Props) => {

@@ -1,10 +1,10 @@
 import { Card,CardContent,Button,Stack} from "@mui/material"
 import {Link} from 'react-router-dom'
 import "./ProductListItem.scss"
-import Checkbox from '@mui/material/Checkbox';
-import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
-import Favorite from '@mui/icons-material/Favorite';
-import Rating from '@mui/material/Rating';
+// import Checkbox from '@mui/material/Checkbox';
+// import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
+// import Favorite from '@mui/icons-material/Favorite';
+// import Rating from '@mui/material/Rating';
 import NewsPage1 from "pages/News/NewsPage1";
 
 type Props = {    

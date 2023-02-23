@@ -3,10 +3,10 @@ import ProductListItem from "components/ProductList/ProductListItem"
 import 'components/ProductList/ProductListItem.scss'
 import podcastArray from "utils/podcastArray"
 import {Link} from 'react-router-dom'
-import Rating from '@mui/material/Rating';
-import Favorite from '@mui/icons-material/Favorite';
-import Checkbox from '@mui/material/Checkbox';
-import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
+// import Rating from '@mui/material/Rating';
+// import Favorite from '@mui/icons-material/Favorite';
+// import Checkbox from '@mui/material/Checkbox';
+// import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 
 
 

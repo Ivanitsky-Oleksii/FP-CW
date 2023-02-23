@@ -10,10 +10,10 @@ import {
 import 'components/ProductList/ProductListItem.scss'
 import np4Array from 'utils/np4Array'
 import { Link } from 'react-router-dom'
-import Rating from '@mui/material/Rating'
-import Favorite from '@mui/icons-material/Favorite'
-import Checkbox from '@mui/material/Checkbox'
-import FavoriteBorder from '@mui/icons-material/FavoriteBorder'
+// import Rating from '@mui/material/Rating'
+// import Favorite from '@mui/icons-material/Favorite'
+// import Checkbox from '@mui/material/Checkbox'
+// import FavoriteBorder from '@mui/icons-material/FavoriteBorder'
 
 type Props = {}
 const NewsPage4 = (props: Props) => {
