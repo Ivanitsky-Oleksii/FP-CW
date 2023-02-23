@@ -20,7 +20,7 @@ return (
             component="h4"
             className="typography-news"
         >
-<Button className='news-btn' color="inherit"><Link className='news-btn' to="/news">NEWS</Link></Button>
+NEWS
         </Typography>
 
         <Grid container spacing={5}>
@@ -45,7 +45,7 @@ return (
             component="h4"
             className="typography-news"
         >
-        <Button className='podc-btn' color="inherit"><Link className='podc-btn'  to="/podcast">PODCAST</Link></Button>
+        PODCAST
         </Typography>
         <Grid container spacing={5}>
             {productsArray2.map(
@@ -71,7 +71,7 @@ return (
             component="h4"
             className="typography-news"
         >
-        <Button className='radio-botn' color="inherit"><Link className='radio-botn' to="/radio">RADIO</Link></Button>
+        RADIO
         </Typography>
         <Grid container spacing={5}>
             {productsArray3.map(
