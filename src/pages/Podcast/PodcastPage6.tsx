@@ -1,5 +1,4 @@
 import {
-    Typography,
     Grid,
     Button,
     Stack,
@@ -10,10 +9,7 @@ import {
 import 'components/ProductList/ProductListItem.scss'
 import pp6Array from 'utils/pp6Array'
 import { Link } from 'react-router-dom'
-// import Rating from '@mui/material/Rating'
-// import Favorite from '@mui/icons-material/Favorite'
-// import Checkbox from '@mui/material/Checkbox'
-// import FavoriteBorder from '@mui/icons-material/FavoriteBorder'
+
 
 type Props = {}
 const PodcastPage1 = (props: Props) => {
@@ -45,9 +41,7 @@ const PodcastPage1 = (props: Props) => {
                         LISTEN NOW ▶
                     </Link>
                 </Button>
-                                        {/* <div className="product-checkbox"><Checkbox  icon={<FavoriteBorder sx={{color:"white"}} />} checkedIcon={<Favorite sx={{color:"red"}} />}/></div>
-            <Stack direction="row-reverse"justifyContent="center"alignItems="center"spacing={5} margin="10px">
-            <Rating name="half-rating" defaultValue={2} precision={1} sx={{color:"white",paddingBottom:"15px"}} /></Stack> */}
+                
                                     </CardContent>
                                 
                             </Card>

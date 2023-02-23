@@ -4,7 +4,7 @@ import './ProductListItem.scss'
 import productsArray from "utils/productsArray"
 import productsArray2 from "utils/productsArray2"
 import productsArray3 from "utils/productsArray3"
-// import {Link} from 'react-router-dom'
+
 
 
 type Props = {
