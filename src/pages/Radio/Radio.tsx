@@ -1,7 +1,7 @@
 import { Typography,Grid, Button,Stack } from "@mui/material"
 import ProductListItem from "components/ProductList/ProductListItem"
 import 'components/ProductList/ProductListItem.scss'
-import productsArray6 from "utils/productsArray6"
+import radioArray from "utils/radioArray"
 import {Link} from 'react-router-dom'
 import Rating from '@mui/material/Rating';
 import Favorite from '@mui/icons-material/Favorite';
@@ -24,7 +24,7 @@ const Radio = (props: Props) => {
             </Typography>
     
             <Grid container spacing={1}>
-                {productsArray6.map(
+                {radioArray.map(
                     (
                         { id,title, description, data, image,url,link},
                         i) => (

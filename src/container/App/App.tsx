@@ -47,24 +47,24 @@ const App = (props: Props) => {
     <Route path="podcast" element={<Podcast/>}/>
     <Route path="favorite" element={<Favorite/>}/>
     <Route path="about" element={<About/>}/>
-    <Route path="newspage1" element={<NewsPage1/>}/>
-    <Route path="newspage2" element={<NewsPage2/>}/>
-    <Route path="newspage3" element={<NewsPage3/>}/>
-    <Route path="newspage4" element={<NewsPage4/>}/>
-    <Route path="newspage5" element={<NewsPage5/>}/>
-    <Route path="newspage6" element={<NewsPage6/>}/>
-    <Route path="podcastpage1" element={<PodcastPage1/>}/>
-    <Route path="podcastpage2" element={<PodcastPage2/>}/>
-    <Route path="podcastpage3" element={<PodcastPage3/>}/>
-    <Route path="podcastpage4" element={<PodcastPage4/>}/>
-    <Route path="podcastpage5" element={<PodcastPage5/>}/>
-    <Route path="podcastpage6" element={<PodcastPage6/>}/>
-    <Route path="radiopage1" element={<RadioPage1/>}/>
-    <Route path="radiopage2" element={<RadioPage2/>}/>
-    <Route path="radiopage3" element={<RadioPage3/>}/>
-    <Route path="radiopage4" element={<RadioPage4/>}/>
-    <Route path="radiopage5" element={<RadioPage5/>}/>
-    <Route path="radiopage6" element={<RadioPage6/>}/>
+    <Route path="npage1" element={<NewsPage1/>}/>
+    <Route path="npage2" element={<NewsPage2/>}/>
+    <Route path="npage3" element={<NewsPage3/>}/>
+    <Route path="npage4" element={<NewsPage4/>}/>
+    <Route path="npage5" element={<NewsPage5/>}/>
+    <Route path="npage6" element={<NewsPage6/>}/>
+    <Route path="ppage1" element={<PodcastPage1/>}/>
+    <Route path="ppage2" element={<PodcastPage2/>}/>
+    <Route path="ppage3" element={<PodcastPage3/>}/>
+    <Route path="ppage4" element={<PodcastPage4/>}/>
+    <Route path="ppage5" element={<PodcastPage5/>}/>
+    <Route path="ppage6" element={<PodcastPage6/>}/>
+    <Route path="rpage1" element={<RadioPage1/>}/>
+    <Route path="rpage2" element={<RadioPage2/>}/>
+    <Route path="rpage3" element={<RadioPage3/>}/>
+    <Route path="rpage4" element={<RadioPage4/>}/>
+    <Route path="rpage5" element={<RadioPage5/>}/>
+    <Route path="rpage6" element={<RadioPage6/>}/>
 
     </Routes>
     </Container>

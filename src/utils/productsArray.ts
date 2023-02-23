@@ -20,7 +20,7 @@ const productsArray: Product[] = [
         
         image:"/images/1.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"NewsPage1"
+        link:"npage1"
     },
     {
         id:2,
@@ -33,7 +33,7 @@ const productsArray: Product[] = [
     
         image:"/images/2.jpg",
         url:"https://asot749.lnk.to/SomedayAW",
-        link:"NewsPage2"
+        link:"npage2"
     },
     {
         id:3,
@@ -45,7 +45,7 @@ const productsArray: Product[] = [
 
         image:"/images/3.jpg",
         url:"https://avbsc.lnk.to/DayglowAW",
-        link:"NewsPage3"
+        link:"npage3"
     },
     {
         id:4,
@@ -57,7 +57,7 @@ const productsArray: Product[] = [
 
         image:"/images/4.jpg",
         url:"https://asot743.lnk.to/DistantDreamsAW",
-        link:"NewsPage4"
+        link:"npage4"
     },
     {
         id:5,
@@ -69,7 +69,7 @@ const productsArray: Product[] = [
 
         image:"/images/5.jpg",
         url:"https://wao138375.lnk.to/ColorfulSunriseAW",
-        link:"NewsPage5"
+        link:"npage5"
     },
     {
         id:6,
@@ -81,7 +81,7 @@ const productsArray: Product[] = [
         
         image:"/images/6.jpg",
         url:"https://armd1704.lnk.to/LoveLikeWereDyingAW",
-        link:"NewsPage6"
+        link:"npage6"
     },
 ] 
 export default productsArray
