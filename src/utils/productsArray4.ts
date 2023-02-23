@@ -21,7 +21,7 @@ const productsArray4: Product[] = [
         image:"/images/1.jpg",
         
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"news/NewsPage1"
+        link:"NewsPage1"
         
     },
     {
@@ -36,7 +36,7 @@ const productsArray4: Product[] = [
         image:"/images/2.jpg",
         
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"news/NewsPage1"
+        link:"NewsPage2"
         
     },
     {
@@ -50,7 +50,7 @@ const productsArray4: Product[] = [
         image:"/images/3.jpg",
         
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"news/NewsPage1"
+        link:"NewsPage3"
         
     },
     {
@@ -64,7 +64,7 @@ const productsArray4: Product[] = [
         image:"/images/4.jpg",
         
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"news/NewsPage1"
+        link:"NewsPage4"
 
     },
     {
@@ -78,7 +78,7 @@ const productsArray4: Product[] = [
         image:"/images/5.jpg",
         
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"news/NewsPage1"
+        link:"NewsPage5"
 
     },
     {
@@ -92,7 +92,7 @@ const productsArray4: Product[] = [
         image:"/images/6.jpg",
         
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"news/NewsPage1"
+        link:"NewsPage6"
     },
 ] 
 export default productsArray4

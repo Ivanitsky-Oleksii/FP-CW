@@ -4,6 +4,8 @@ type Product = {
     description: string
     data: string
     image:string
+    url:string
+    link:string
 }
 
 const productsArray2: Product[] = [
@@ -17,6 +19,8 @@ const productsArray2: Product[] = [
 
         
         image:"/images/27.jpg",
+        url:"https://wao138377.lnk.to/TheGodsDiscoAW",
+        link:"PodcastPage1"
     },
     {
         id:2,
@@ -28,6 +32,8 @@ const productsArray2: Product[] = [
 
     
         image:"/images/13.jpg",
+        url:"https://wao138377.lnk.to/TheGodsDiscoAW",
+        link:"PodcastPage2"
     },
     {
         id:3,
@@ -38,6 +44,8 @@ const productsArray2: Product[] = [
         data: 'February 1, 2023',
 
         image:"/images/26.jpg",
+        url:"https://wao138377.lnk.to/TheGodsDiscoAW",
+        link:"PodcastPage3"
     },
     {
         id:4,
@@ -48,6 +56,8 @@ const productsArray2: Product[] = [
         data: 'July 1, 2022',
 
         image:"/images/28.jpg",
+        url:"https://wao138377.lnk.to/TheGodsDiscoAW",
+        link:"PodcastPage4"
     },
     {
         id:5,
@@ -58,6 +68,8 @@ const productsArray2: Product[] = [
         data: 'December 14, 2022',
 
         image:"/images/24.jpg",
+        url:"https://wao138377.lnk.to/TheGodsDiscoAW",
+        link:"PodcastPage5"
     },
     {
         id:6,
@@ -68,6 +80,8 @@ const productsArray2: Product[] = [
         data: 'November 18, 2022',
         
         image:"/images/25.jpg",
+        url:"https://wao138377.lnk.to/TheGodsDiscoAW",
+        link:"PodcastPage6"
     },
 ] 
 export default productsArray2

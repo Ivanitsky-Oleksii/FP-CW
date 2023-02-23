@@ -24,7 +24,7 @@ const ProductListItem = ({
 }  : Props) => {
 return (
     <Card variant="outlined">
-        <Link className='back-btn' to={link}>
+        <Link to={link}>
         <CardContent className="card-content">
             <div className="product-img"><img src={image} alt="fake page" /></div>
             <div className="product-title">{title}</div>
