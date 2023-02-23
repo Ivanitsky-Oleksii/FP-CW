@@ -1,14 +1,15 @@
 import logo from 'assets/Logo.png'
 import Typography from '@mui/material/Typography'
+import 'components/Logo/Logo.scss'
 
 
 type Props = {}
 
 const Logo = (props: Props) => {
 return (
-    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-        <img src={logo} alt="Fake page"/>
-        </Typography>
+    
+        <img className='logo' src={logo} alt="Fake page"/>
+        
     
 )
 }

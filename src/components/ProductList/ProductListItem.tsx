@@ -5,6 +5,7 @@ import Checkbox from '@mui/material/Checkbox';
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import Favorite from '@mui/icons-material/Favorite';
 import Rating from '@mui/material/Rating';
+import NewsPage1 from "pages/News/NewsPage1";
 
 type Props = {    
     title:string
@@ -24,7 +25,7 @@ const ProductListItem = ({
     
 }  : Props) => {
 return (
-    <Card variant="outlined">
+    <Card variant="outlined" onClick={() => NewsPage1(title)}>
         <Link className="link" to={link}>
         <CardContent className="card-content">
             <div className="product-img"><img src={image} alt="fake page" /></div>
