@@ -29,6 +29,7 @@ const News = (props: Props) => {
                         { id,title, description, data, image,url,link},
                         i) => (
                         <Grid item xs={12} sm={12} md={15} key={id}>
+                            
                             <ProductListItem
                                 title={title}
                                 description={description}
