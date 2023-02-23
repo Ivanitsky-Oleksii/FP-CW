@@ -5,6 +5,7 @@ type Product = {
     data: string
     image:string
     url:string
+    link:string
 }
 
 const productsArray3: Product[] = [
@@ -18,7 +19,8 @@ const productsArray3: Product[] = [
 
         
         image:"/images/30.jpg",
-        url:""
+        url:"https://wao138377.lnk.to/TheGodsDiscoAW",
+        link:"RadioPage1"
     },
     {
         id:2,
@@ -30,7 +32,8 @@ const productsArray3: Product[] = [
 
     
         image:"/images/29.jpg",
-        url:""
+        url:"https://wao138377.lnk.to/TheGodsDiscoAW",
+        link:"RadioPage2"
     },
     {
         id:3,
@@ -41,7 +44,8 @@ const productsArray3: Product[] = [
         data: 'February 3, 2023',
 
         image:"/images/31.jpg",
-        url:""
+        url:"https://wao138377.lnk.to/TheGodsDiscoAW",
+        link:"RadioPage3"
     },
     {
         id:4,
@@ -52,7 +56,8 @@ const productsArray3: Product[] = [
         data: 'January 16, 2023',
 
         image:"/images/21.jpg",
-        url:""
+        url:"https://wao138377.lnk.to/TheGodsDiscoAW",
+        link:"RadioPage4"
     },
     {
         id:5,
@@ -63,7 +68,8 @@ const productsArray3: Product[] = [
         data: 'January 20, 2023',
 
         image:"/images/23.jpg",
-        url:""
+        url:"https://wao138377.lnk.to/TheGodsDiscoAW",
+        link:"RadioPage5"
     },
     {
         id:6,
@@ -74,7 +80,8 @@ const productsArray3: Product[] = [
         data: 'January 16, 2023',
         
         image:"/images/20.jpg",
-        url:""
+        url:"https://wao138377.lnk.to/TheGodsDiscoAW",
+        link:"RadioPage6"
     },
 ] 
 export default productsArray3

@@ -1,4 +1,4 @@
-import { Typography,Grid, Button } from "@mui/material"
+import { Typography,Grid } from "@mui/material"
 import ProductListItem from "./ProductListItem"
 import './ProductListItem.scss'
 import productsArray from "utils/productsArray"
@@ -26,7 +26,7 @@ NEWS
         <Grid container spacing={5}>
             {productsArray.map(
                 (
-                    { id,title, description, data, image},
+                    { id,title, description, data, image,url,link},
                     i) => (
                     <Grid item xs={12} sm={6} md={4} key={id}>
                         <ProductListItem
@@ -34,6 +34,8 @@ NEWS
                             description={description}
                             data={data}
                             image={image}
+                            url={url}
+                            link={link}
                         />
                     </Grid>
                 )
@@ -50,7 +52,7 @@ NEWS
         <Grid container spacing={5}>
             {productsArray2.map(
                 (
-                    { id,title, description, data, image },
+                    { id,title, description, data, image,url,link },
                     i) => (
                     <Grid item xs={12} sm={6} md={4} key={id}>
                         <ProductListItem
@@ -58,6 +60,8 @@ NEWS
                             description={description}
                             data={data}
                             image={image}
+                            url={url}
+                            link={link}
                             
 
                         />
@@ -76,7 +80,7 @@ NEWS
         <Grid container spacing={5}>
             {productsArray3.map(
                 (
-                    { id,title, description, data, image  },
+                    { id,title, description, data, image,url,link  },
                     i) => (
                     <Grid item xs={12} sm={6} md={4} key={id}>
                         <ProductListItem
@@ -84,6 +88,8 @@ NEWS
                             description={description}
                             data={data}
                             image={image}
+                            url={url}
+                            link={link}
                             
                         />
                     </Grid>

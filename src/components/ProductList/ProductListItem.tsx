@@ -9,25 +9,30 @@ type Props = {
     title:string
     description:string
     data:string
-    image:string}
+    image:string
+    url:string
+    link:string
+}
 const ProductListItem = ({
     title,
     description,
     data,
     image,
+    url,
+    link,
     
 }  : Props) => {
 return (
     <Card variant="outlined">
+        <Link className='back-btn' to={link}>
         <CardContent className="card-content">
             <div className="product-img"><img src={image} alt="fake page" /></div>
-            <Stack direction="row-reverse"justifyContent="center"alignItems="center"spacing={5} margin="10px">
-<Button color="inherit"><Link className='back-btn' to="/"><div className="product-title">{title}</div></Link></Button></Stack>
-            
+            <div className="product-title">{title}</div>
             <div className="product-desc">{description}</div>
             <div className="product-data"> {data}</div>
-            <div className="product-checkbox"><Checkbox  icon={<FavoriteBorder sx={{color:"white"}} />} checkedIcon={<Favorite sx={{color:"red"}} />}/></div>
+{/* <div className="product-checkbox"><Checkbox  icon={<FavoriteBorder sx={{color:"white"}} />} checkedIcon={<Favorite sx={{color:"red"}} />}/></div> */}
         </CardContent>
+        </Link>
         
     </Card>
 )
