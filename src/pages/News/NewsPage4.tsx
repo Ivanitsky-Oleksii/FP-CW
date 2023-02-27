@@ -58,8 +58,8 @@ const NewsPage4 = (props: Props) => {
                 margin="10px"
             >
                 <Button color="inherit">
-                    <Link className="back-btn" to="/">
-                        BACK TO HOME
+                    <Link className="back-btn" to="../news">
+                        BACK TO NEWS
                     </Link>
                 </Button>
             </Stack>
