@@ -22,7 +22,7 @@ const ProductListItem = ({
     
 }  : Props) => {
 return (
-    <Card variant="outlined" onClick={() => NewsPage1(title)}>
+    <Card  onClick={() => NewsPage1(title)}>
         <Link className="link" to={link}>
         <CardContent className="card-content">
             <div className="product-img"><img src={image} alt="fake page" /></div>
