@@ -1,6 +1,5 @@
-import Button from '@mui/material/Button'
+
 import './Menu.scss'
-import {Link} from 'react-router-dom'
 import MenuItem from './MenuItem'
 
 type Props = {}
