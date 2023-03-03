@@ -1,56 +1,45 @@
+@media (max-width: 768px ) {
+    .menu-item {
+        text-decoration: none;
+        color: white;
+        font-family: 'Orbitron', sans-serif;
+        text-shadow: 0px 2px 3px rgb(255, 255, 255);
+        font-size: 8px;
+        position: absolute;
+        top:-35px;
+        left:-325px;
+        
+    }
+    .menu-item-active {
+        text-decoration: none;
+        color: red; 
+        font-family: 'Orbitron', sans-serif;
+        text-shadow: 0px 2px 3px rgb(255, 0, 0);
+        position: fixed;
+        font-size: 12px;
+        top: 73px;
+        left: 1%;
 
-.btn-1{
     
-    left:-290px;
-    top: 37px;
-    font-size: 14px;
-    font-family: 'Orbitron', sans-serif;
-    text-shadow: 0px 2px 3px rgb(255, 255, 255);
-    text-decoration: none;
-    color:white 
-    
+    }
 }
-.btn-2{
-    left:-15px;
-    top: 2px;
-    font-size: 14px;
-    font-family: 'Orbitron', sans-serif;
-    text-shadow: 0px 2px 3px rgb(255, 255, 255);
+@media (min-width: 769px) {
+.menu-item {
     text-decoration: none;
     color: white;
-}
-.btn-3{
-    left:-452px;
-    top: -16px;
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Orbitron', sans-serif;
     text-shadow: 0px 2px 3px rgb(255, 255, 255);
-    text-decoration: none;
-    color: white;
-}
-.btn-4{
-    color:white;
-    left:-295px;
-    top: 37px;
-    font-size: 14px;
-    font-family: 'Orbitron', sans-serif;
-    text-shadow: 0px 2px 3px rgb(255, 255, 255);
-    text-decoration: none;
+    
 
 }
-.btn-1:hover{
-    color: rgb(60, 255, 0);
-}
-.btn-3:hover{
-    color: rgb(60, 255, 0);
-}
-.btn-2:hover{
-    color: rgb(60, 255, 0);
-}
-.btn-1:hover{
-    color: rgb(60, 255, 0);
-}
-.btn-4:hover{
-    color: rgb(255, 0, 0);
+.menu-item-active {
+    text-decoration: none;
+    color: red;
+    font-size: 19px;
+    font-family: 'Orbitron', sans-serif;
     text-shadow: 0px 2px 3px rgb(255, 0, 0);
+    
+
+}
 }

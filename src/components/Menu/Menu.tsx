@@ -1,21 +1,20 @@
 import Button from '@mui/material/Button'
 import './Menu.scss'
 import {Link} from 'react-router-dom'
-
+import MenuItem from './MenuItem'
 
 type Props = {}
-// const linkStyle = {textDecoration: 'none',color:"white"}
+
 const Menu = (props: Props) => {
 return (
     <>
-
-<Button className='btn-1' color="inherit"><Link className='btn-1'  to="/">HOME</Link></Button>
-<Button className='btn-1' color="inherit"><Link className='btn-3' to="/news">NEWS</Link></Button>
-<Button className='btn-1' color="inherit"><Link className='btn-3'  to="/podcast">PODCAST</Link></Button>
-<Button className='btn-4' color="inherit"><Link className='btn-4' to="/radio">RADIO</Link></Button>
-<Button className='btn-3' color="inherit"><Link className='btn-3' to="/favorite">Favorite</Link></Button>
-<Button className='btn-3' color="inherit"><Link className='btn-2' to="/about">ABOUT</Link></Button>
-</>
+<MenuItem to="/">HOME</MenuItem>
+<MenuItem to="/news">NEWS</MenuItem>
+<MenuItem to="/podcast">PODCAST</MenuItem>
+<MenuItem to="/radio">RADIO</MenuItem>
+<MenuItem to="/favorite">FAVORITE</MenuItem>
+<MenuItem to="/about">ABOUT</MenuItem>
+    </>
 )
 }
 export default Menu
