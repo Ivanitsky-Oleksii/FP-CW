@@ -1,7 +1,6 @@
 import { Product } from "utils/productsArray"
-import { Grid, Card, CardContent, Button, CardActions } from '@mui/material'
-import DeleteIcon from '@mui/icons-material/Delete'
-
+import { Grid, Card, CardContent, Button, Stack } from '@mui/material'
+import "./Favorite.scss"
 type Props = {
     product:Product
     removeFavorite: (id: number) => void
@@ -10,25 +9,20 @@ type Props = {
 const FavoriteListItem = ({product,removeFavorite}:Props) => {
     return(
         <>
-        <Grid item xs={12} sm={4}>
             <Card>
-                <CardContent>
+                <CardContent className="card-content">
                     <div>
                     <img src={product.image} alt="#" />
                     </div>
                     <div>{product.title}</div>
-                    
-                </CardContent>
-                <CardActions>
                     <Button
                         variant="outlined"
-                        onClick={() => removeFavorite(product.id)}
-                    >
-                        <DeleteIcon />
+                        onClick={() => removeFavorite(product.id)}>DL
                     </Button>
-                </CardActions>
+                </CardContent>
             </Card>
-        </Grid>
+        
+        
     </>
     )
 }

@@ -30,15 +30,15 @@ const ProductListItem = ({
 }  : Props) => {
 return (
     <Card  onClick={() => NewsPage1(title)}>
-        <Link className="link" to={link}>
         <CardContent className="card-content">
             <div className="product-img"><img src={image} alt="fake page" /></div>
+            <Link className="link" to={link}>
             <div className="product-title">{title}</div>
+            </Link>
             <div className="product-desc">{description}</div>
             <div className="product-data"> {data}</div>
             <Button variant="outlined" onClick={() => addProductToFavorite(id)}>Like</Button>    
         </CardContent>
-        </Link>
     </Card>
 )
 }
