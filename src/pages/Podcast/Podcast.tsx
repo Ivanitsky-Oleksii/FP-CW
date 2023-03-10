@@ -7,8 +7,8 @@ import {Link} from 'react-router-dom'
 
 
 
-type Props = {}
-const Podcast = (props: Props) => {
+type Props = {addProductToFavorite:(price:number) => void}
+const Podcast = ({addProductToFavorite}: Props) => {
     return (
         <>
             <Typography
@@ -28,12 +28,16 @@ const Podcast = (props: Props) => {
                         <Grid item xs={12} sm={12} md={15} key={id}>
                             
                             <ProductListItem
+                            addProductToFavorite={addProductToFavorite}
+                                id={id}
                                 title={title}
                                 description={description}
                                 data={data}
                                 image={image}
                                 url={url}
-                                link={link}/>
+                                link={link}
+                                
+                                />
                                 
                                 
                                 </Grid>))}

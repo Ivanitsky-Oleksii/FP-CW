@@ -8,11 +8,10 @@ import productsArray3 from "utils/productsArray3"
 
 
 
-type Props = {
-}
+type Props = {addProductToFavorite:(price:number) => void}
 
 
-const ProductList = (props: Props) => {
+const ProductList = ({addProductToFavorite}: Props) => {
 return (
     <>
         <Typography
@@ -31,8 +30,10 @@ NEWS
                     i) => (
                     <Grid item xs={12} sm={6} md={4} key={id}>
                         <ProductListItem
+                            id={id}
                             title={title}
                             description={description}
+                            addProductToFavorite={addProductToFavorite}
                             data={data}
                             image={image}
                             url={url}
@@ -57,8 +58,10 @@ NEWS
                     i) => (
                     <Grid item xs={12} sm={6} md={4} key={id}>
                         <ProductListItem
+                            id={id}
                             title={title}
                             description={description}
+                            addProductToFavorite={addProductToFavorite}
                             data={data}
                             image={image}
                             url={url}
@@ -85,8 +88,10 @@ NEWS
                     i) => (
                     <Grid item xs={12} sm={6} md={4} key={id}>
                         <ProductListItem
+                            id={id}
                             title={title}
                             description={description}
+                            addProductToFavorite={addProductToFavorite}
                             data={data}
                             image={image}
                             url={url}
