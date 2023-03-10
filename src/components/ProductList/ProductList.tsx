@@ -14,15 +14,6 @@ type Props = {addProductToFavorite:(price:number) => void}
 const ProductList = ({addProductToFavorite}: Props) => {
 return (
     <>
-        <Typography
-            variant="h4"
-            align="center"
-            component="h4"
-            className="typography-news"
-        >
-NEWS
-        </Typography>
-
         <Grid container spacing={5}>
             {productsArray.map(
                 (
@@ -38,65 +29,6 @@ NEWS
                             image={image}
                             url={url}
                             link={link}
-                        />
-                    </Grid>
-                )
-            )}
-        </Grid>
-        <Typography
-            variant="h4"
-            align="center"
-            component="h4"
-            className="typography-news"
-        >
-        PODCAST
-        </Typography>
-        <Grid container spacing={5}>
-            {productsArray2.map(
-                (
-                    { id,title, description, data, image,url,link },
-                    i) => (
-                    <Grid item xs={12} sm={6} md={4} key={id}>
-                        <ProductListItem
-                            id={id}
-                            title={title}
-                            description={description}
-                            addProductToFavorite={addProductToFavorite}
-                            data={data}
-                            image={image}
-                            url={url}
-                            link={link}
-                            
-
-                        />
-                    </Grid>
-                )
-            )}
-        </Grid>
-        <Typography
-            variant="h4"
-            align="center"
-            component="h4"
-            className="typography-news"
-        >
-        RADIO
-        </Typography>
-        <Grid container spacing={5}>
-            {productsArray3.map(
-                (
-                    { id,title, description, data, image,url,link  },
-                    i) => (
-                    <Grid item xs={12} sm={6} md={4} key={id}>
-                        <ProductListItem
-                            id={id}
-                            title={title}
-                            description={description}
-                            addProductToFavorite={addProductToFavorite}
-                            data={data}
-                            image={image}
-                            url={url}
-                            link={link}
-                            
                         />
                     </Grid>
                 )
