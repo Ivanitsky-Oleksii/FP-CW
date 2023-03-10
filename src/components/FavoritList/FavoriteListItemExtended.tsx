@@ -25,11 +25,10 @@ const FavoriteListItemExtended = ({
         <Grid item xs={12} sm={4}>
             <Card>
                 <CardContent>
-                    <div className="product-image">
-                    <img src={product.image} alt="" />
+                    <div>
+                    <img src={product.image} alt="#" />
                     </div>
                     <div>{product.title}</div>
-                    <p>Count:{productCount}</p>
                     
                 </CardContent>
                 <CardActions>

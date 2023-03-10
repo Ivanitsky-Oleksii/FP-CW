@@ -1,7 +1,6 @@
 import { Card,CardContent,Button} from "@mui/material"
 import {Link} from 'react-router-dom'
 import "./ProductListItem.scss"
-import { useState } from 'react'
 
 import NewsPage1 from "pages/News/NewsPage1";
 
