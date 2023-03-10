@@ -1,4 +1,4 @@
-type Product = {
+export type Product3 = {
     id:number,
     title: string
     description: string
@@ -8,7 +8,7 @@ type Product = {
     link:string
 }
 
-const productsArray3: Product[] = [
+const productsArray3: Product3[] = [
     {
         id:1,
         title: 'ASOT 1108',
@@ -84,4 +84,6 @@ const productsArray3: Product[] = [
         link:"rpage6"
     },
 ] 
+export const getProductsObject3 = (array:Product3[]) =>
+array.reduce((object,product) => ({...object,[product.id]:product,}),{})
 export default productsArray3

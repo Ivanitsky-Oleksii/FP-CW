@@ -47,6 +47,13 @@ const App = (props: Props) => {
             [id]: (prevState[id] || 0),
         }))
     }
+    const addProductToFavorite2 = (id: number, ) => {
+        setProductsInFavorite((prevState) => ({
+            ...prevState,
+            [id]: (prevState[id] || 0),
+        }))
+    }
+
     const removeFavorite = (id: number) => {
         setProductsInFavorite((prevState) => omit(prevState, [id]))
     }

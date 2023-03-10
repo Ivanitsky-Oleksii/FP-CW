@@ -13,6 +13,7 @@ type Props = {
     url:string
     link:string
     addProductToFavorite:(price:number) => void
+    
 }
 
 
