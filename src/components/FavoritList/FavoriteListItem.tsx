@@ -10,7 +10,7 @@ type Props = {
     removeFavorite: (id: number) => void
 }
 
-const FavoriteListItem1 = ({product1,product2,product3,removeFavorite}:Props) => {
+const FavoriteListItem1 = ({product1,removeFavorite}:Props) => {
     return(
         <>
             <Card>

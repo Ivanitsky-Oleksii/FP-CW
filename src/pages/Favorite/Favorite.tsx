@@ -1,6 +1,6 @@
 import Button from '@mui/material/Button'
 import { Link } from 'react-router-dom'
-import { Typography, Grid, Stack } from '@mui/material'
+import {  Grid, Stack } from '@mui/material'
 import FavoriteList from 'components/FavoritList/FavoriteList1'
 import FavoriteListItem from 'components/FavoritList/FavoriteListItem'
 

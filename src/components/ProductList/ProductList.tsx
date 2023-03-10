@@ -1,9 +1,8 @@
-import { Typography,Grid } from "@mui/material"
+import { Grid } from "@mui/material"
 import ProductListItem from "./ProductListItem"
 import './ProductListItem.scss'
 import productsArray from "utils/productsArray"
-import productsArray2 from "utils/productsArray2"
-import productsArray3 from "utils/productsArray3"
+
 
 
 

@@ -1,6 +1,4 @@
 import productsArray, { getProductsObject1, Product1 } from 'utils/productsArray'
-import productsArray2, { getProductsObject2, Product2 } from 'utils/productsArray2'
-import productsArray3, { getProductsObject3, Product3 } from 'utils/productsArray3'
 import FavoriteListItem from './FavoriteListItem'
 
 
