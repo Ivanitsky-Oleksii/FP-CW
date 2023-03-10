@@ -13,18 +13,16 @@ type Props = {
     removeFavorite: (id:number)=>void
     FavoriteItem?: any
 }
-
 const FavoriteList = ({
     productsInFavorite,
     productsObject1 = getProductsObject1(productsArray),
     FavoriteItem = FavoriteListItem,removeFavorite,
-
-
 }: Props) => {
     return (
         <>
             {Object.keys(productsInFavorite).map((productId) => (
                 <FavoriteItem
+                    
                     key={productId}
                     product1={productsObject1[parseInt(productId)]}
                     removeFavorite={removeFavorite}
