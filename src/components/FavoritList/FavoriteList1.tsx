@@ -1,9 +1,8 @@
 import productsArray, { getProductsObject1, Product1 } from 'utils/productsArray'
 import productsArray2, { getProductsObject2, Product2 } from 'utils/productsArray2'
 import productsArray3, { getProductsObject3, Product3 } from 'utils/productsArray3'
-import FavoriteListItem1 from './FavoriteListItem'
-import FavoriteListItem2 from './FavoriteListItem2'
-import FavoriteListItem3 from './FavoriteListItem3'
+import FavoriteListItem from './FavoriteListItem'
+
 
 type Props = {
     productsInFavorite: {
@@ -13,24 +12,24 @@ type Props = {
         [id: number]: Product1
     }
 
-    removeFavorite1: (id:number)=>void
-    FavoriteItem1?: any
+    removeFavorite: (id:number)=>void
+    FavoriteItem?: any
 }
 
-const FavoriteList1 = ({
+const FavoriteList = ({
     productsInFavorite,
     productsObject1 = getProductsObject1(productsArray),
-    FavoriteItem1 = FavoriteListItem1,removeFavorite1,
+    FavoriteItem = FavoriteListItem,removeFavorite,
 
 
 }: Props) => {
     return (
         <>
             {Object.keys(productsInFavorite).map((productId) => (
-                <FavoriteItem1
+                <FavoriteItem
                     key={productId}
                     product1={productsObject1[parseInt(productId)]}
-                    removeFavorite={removeFavorite1}
+                    removeFavorite={removeFavorite}
                     productCount={productsInFavorite[parseInt(productId)]}
                 />
                 
@@ -38,4 +37,4 @@ const FavoriteList1 = ({
         </>
     )
 }
-export default FavoriteList1
+export default FavoriteList
