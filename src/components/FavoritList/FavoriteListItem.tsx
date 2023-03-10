@@ -10,15 +10,15 @@ type Props = {
     removeFavorite: (id: number) => void
 }
 
-const FavoriteListItem = ({product1,product2,product3,removeFavorite}:Props) => {
+const FavoriteListItem1 = ({product1,product2,product3,removeFavorite}:Props) => {
     return(
         <>
             <Card>
                 <CardContent className="card-content">
                     <div>
-                    <img src={product3.image} alt="#" />
+                    <img src={product1.image} alt="#" />
                     </div>
-                    <div>{product3.title}</div>
+                    <div>{product1.title}</div>
                     <Button
                         variant="outlined"
                         onClick={() => removeFavorite(product1.id)}>DL
@@ -28,4 +28,4 @@ const FavoriteListItem = ({product1,product2,product3,removeFavorite}:Props) => 
     </>
     )
 }
-export default FavoriteListItem
+export default FavoriteListItem1
