@@ -1,7 +1,7 @@
 import { Product1 } from "utils/productsArray"
 import { Product2 } from "utils/productsArray2"
 import { Product3 } from "utils/productsArray3"
-import { Grid, Card, CardContent, Button, Stack } from '@mui/material'
+import {  Card, CardContent, Button} from '@mui/material'
 import "./Favorite.scss"
 type Props = {
     product1:Product1
@@ -10,15 +10,15 @@ type Props = {
     removeFavorite: (id: number) => void
 }
 
-const FavoriteListItem = ({product1,product3,product2,removeFavorite}:Props) => {
+const FavoriteListItem = ({product1,product2,product3,removeFavorite}:Props) => {
     return(
         <>
             <Card>
                 <CardContent className="card-content">
                     <div>
-                    <img src={product1.image} alt="#" />
+                    <img src={product3.image} alt="#" />
                     </div>
-                    <div>{product1.title}</div>
+                    <div>{product3.title}</div>
                     <Button
                         variant="outlined"
                         onClick={() => removeFavorite(product1.id)}>DL
