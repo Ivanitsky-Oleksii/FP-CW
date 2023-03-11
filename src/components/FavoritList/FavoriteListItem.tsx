@@ -1,5 +1,5 @@
 import { Product1 } from "utils/productsArray"
-import {  Card, CardContent, Button,Checkbox} from '@mui/material'
+import {  Card, CardContent, Button} from '@mui/material'
 import "./Favorite.scss"
 import { Link } from 'react-router-dom'
 import HeartBrokenIcon from '@mui/icons-material/HeartBroken';
