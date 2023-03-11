@@ -2,7 +2,8 @@ import { Product1 } from "utils/productsArray"
 import {  Card, CardContent, Button,Checkbox} from '@mui/material'
 import "./Favorite.scss"
 import { Link } from 'react-router-dom'
-import Favorite from '@mui/icons-material/Favorite';
+import HeartBrokenIcon from '@mui/icons-material/HeartBroken';
+
 
 type Props = {
     product1:Product1
@@ -23,11 +24,12 @@ const FavoriteListItem1 = ({product1,removeFavorite}:Props) => {
                     <div>{product1.title}</div>
                     </Link>
                     <Button
+                        style={{marginTop:"50px",color:"red"}}
+                        startIcon={<HeartBrokenIcon fontSize="inherit" />}
                         variant="text"
-                        color="error"
-                        size="small"
+                        size="large"
                         onClick={() => removeFavorite(product1.id)}>
-                        <Checkbox icon={<Favorite sx={{color:"red"}}/>} />
+                    dislike
                     </Button>
                 </CardContent>
             </Card>
