@@ -8,7 +8,7 @@ type Props = {
     product1:Product1
     removeFavorite: (id: number) => void
     id: number
-    link:string
+    link2:string
 }
 
 const FavoriteListItem1 = ({product1,removeFavorite}:Props) => {
@@ -19,7 +19,7 @@ const FavoriteListItem1 = ({product1,removeFavorite}:Props) => {
                     <div>
                     <img src={product1.image} alt="#" />
                     </div>
-                    <Link className="back-btn" to={product1.link} >
+                    <Link className="back-btn" to={product1.link2} >
                     <div>{product1.title}</div>
                     </Link>
                     <Button
