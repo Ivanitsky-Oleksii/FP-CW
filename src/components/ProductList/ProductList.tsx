@@ -14,10 +14,7 @@ const ProductList = ({addProductToFavorite}: Props) => {
 return (
     <>
         <Grid container spacing={5}>
-            {productsArray.map(
-                (
-                    { id,title, description, data, image,url,link},
-                    i) => (
+            {productsArray.map(({ id,title, description, data, image,url,link},i) => (
                     <Grid item xs={12} sm={6} md={4} key={id}>
                         <ProductListItem
                             id={id}

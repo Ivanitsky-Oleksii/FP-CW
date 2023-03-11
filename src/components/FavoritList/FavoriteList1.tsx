@@ -17,6 +17,7 @@ const FavoriteList = ({
     productsInFavorite,
     productsObject1 = getProductsObject1(productsArray),
     FavoriteItem = FavoriteListItem,removeFavorite,
+
 }: Props) => {
     return (
         <>
