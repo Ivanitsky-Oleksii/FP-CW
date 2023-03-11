@@ -1,8 +1,9 @@
-import { Card,CardContent,Button} from "@mui/material"
+import { Card,CardContent,Button,Checkbox} from "@mui/material"
 import {Link} from 'react-router-dom'
 import "./ProductListItem.scss"
-
+import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import NewsPage1 from "pages/News/NewsPage1";
+import Favorite from '@mui/icons-material/Favorite';
 
 type Props = {   
     id: number 
@@ -38,7 +39,7 @@ return (
             </Link>
             <div className="product-desc">{description}</div>
             <div className="product-data"> {data}</div>
-            <Button variant="outlined" onClick={() => addProductToFavorite(id)}>Like</Button>    
+            <Button color="error" size="small" variant="text" onClick={() => addProductToFavorite(id)}><Checkbox  icon={<FavoriteBorder sx={{color:"white"}} />} checkedIcon={<Favorite sx={{color:"red"}}/>} /></Button>    
         </CardContent>
     </Card>
 )
