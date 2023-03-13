@@ -1,12 +1,15 @@
-
+import FavoriteHeaderItem from "../FavoriteHeader/FavoriteHeaderItem"
 import './Menu.scss'
 import MenuItem from './MenuItem'
 
-type Props = {    productsInFavorite: {
+type Props = {productsInFavorite: {
     [id: number]: number 
-}}
+}
+FavoriteHeader?:any
+}
 
-const Menu = ({productsInFavorite}: Props) => {
+const Menu = ({productsInFavorite,
+FavoriteHeader = FavoriteHeaderItem}: Props) => {
 return (
     <>
 
@@ -16,10 +19,12 @@ return (
 <MenuItem to="/radio">RADIO</MenuItem>
 <MenuItem to="/about">ABOUT</MenuItem>
 <MenuItem to="/favorite">FAVORITE</MenuItem>
+
 {Object.keys(productsInFavorite).map((productId) => (
-<div>{productsInFavorite[parseInt(productId)]}</div>
+<FavoriteHeader
+productCount ={productsInFavorite[parseInt(productId)]}/>
 ))}
-    </>
+</>
 )
 }
 export default Menu
