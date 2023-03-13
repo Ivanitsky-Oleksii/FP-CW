@@ -22,6 +22,7 @@ const FavoriteList = ({
     return (
         <>
             {Object.keys(productsInFavorite).map((productId) => (
+                
                 <FavoriteItem
                     
                     key={productId}
