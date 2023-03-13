@@ -54,7 +54,7 @@ const App = (props: Props) => {
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
-            <Header productsInFavorite={productsInFavorite}/>
+            <Header />
             <Carousel />
             <Container className="main-container" sx={{ padding: '0px 0' }}>
                 <Routes>
