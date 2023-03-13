@@ -13,7 +13,7 @@ FavoriteItem?:any
 }
 
 
-const Menu = ({productsInFavorite,productsObject = getProductsObject1(productsArray),FavoriteItem = FavoriteCounter}: Props) => {
+const Menu = ({productsInFavorite,productsObject = getProductsObject1(productsArray)}: Props) => {
     return (
         <>
             <MenuItem to="/">HOME</MenuItem>

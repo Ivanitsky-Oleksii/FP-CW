@@ -1,20 +1,22 @@
 import './FavoriteCounter.scss'
 import { Product1 } from "utils/productsArray"
 
-type Props = {productCount:number
+type Props = {
+    productCount:number
     product:Product1
+    
 }
 
 
 
-const FavoriteCounter = ({product}: Props) => {
+const FavoriteCounter = ({productCount}: Props) => {
 
 
 
 
 return (
     <>
-    <div className='counter'>{product.id}</div>
+    <div className='counter'>{productCount}</div>
     </>
 )
 }
