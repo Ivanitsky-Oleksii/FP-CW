@@ -20,8 +20,7 @@ return (
 <MenuItem to="/favorite">FAVORITE</MenuItem>
 
 {Object.keys(productsInFavorite).map(() => (
-<FavoriteHeader
-productCount ={productsInFavorite}/>
+<FavoriteHeader/>
 ))}
 <MenuItem to="/about">ABOUT</MenuItem>
 </>
