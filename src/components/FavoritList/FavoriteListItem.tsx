@@ -29,7 +29,7 @@ const FavoriteListItem1 = ({product1,removeFavorite}:Props) => {
                         variant="text"
                         size="large"
                         onClick={() => removeFavorite(product1.id)}>
-                    dislike
+                    
                     </Button>
                 </CardContent>
             </Card>
