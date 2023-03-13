@@ -5,6 +5,7 @@ import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import NewsPage1 from "pages/News/NewsPage1";
 import Favorite from '@mui/icons-material/Favorite';
 
+
 type Props = {   
     id: number 
     title:string
@@ -39,7 +40,7 @@ return (
             </Link>
             <div className="product-desc">{description}</div>
             <div className="product-data"> {data}</div>
-            <Button style={{marginTop:"50px",color:"red"}}color="error" size="small" variant="text" onClick={() => addProductToFavorite(id)}><Checkbox  icon={<FavoriteBorder sx={{color:"red"}} />} checkedIcon={<Favorite sx={{color:"red"}}/>} /></Button>    
+            <Button style={{marginTop:"50px",color:"red"}}color="error" size="small" variant="text" onClick={ () =>(addProductToFavorite(id))}><Checkbox  icon={<FavoriteBorder sx={{color:"red"}} />} checkedIcon={<Favorite sx={{color:"red"}}/>} /></Button>    
         </CardContent>
     </Card>
 )
