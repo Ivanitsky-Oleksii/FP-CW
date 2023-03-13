@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import '../FavoriteHeader/FavoriteHeaderItem.scss'
 
 type Props = {}
 
@@ -8,7 +9,7 @@ const [productsInFavorite, setProductsInFavorite] =
 
 
     return(
-        <div>
+        <div className='counter'>
             {productsInFavorite}
         </div>
     )
