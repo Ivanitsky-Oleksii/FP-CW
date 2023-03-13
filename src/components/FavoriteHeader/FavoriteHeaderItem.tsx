@@ -4,7 +4,7 @@ import '../FavoriteHeader/FavoriteHeaderItem.scss'
 type Props = {}
 
 const FavoriteHeaderItem = (props:Props) => {
-const [productsInFavorite, setProductsInFavorite] =
+const [productsInFavorite] =
     useState<number>(1)
 
 

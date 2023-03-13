@@ -28,7 +28,7 @@ const FavoriteList = ({
                     key={productId}
                     product1={productsObject1[parseInt(productId)]}
                     removeFavorite={removeFavorite}
-                    productCount={productsInFavorite[parseInt(productId)]}
+                    productCount={productsInFavorite}
                 />
                 
             ))}
