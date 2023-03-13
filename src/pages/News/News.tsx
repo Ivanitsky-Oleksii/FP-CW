@@ -5,7 +5,7 @@ import newsArray from 'utils/newsArray'
 import { Link } from 'react-router-dom'
 
 
-type Props = {addProductToFavorite:(price:number) => void}
+type Props = {addProductToFavorite:(id:number) => void}
 const News = ({addProductToFavorite}: Props) => {
     return (
         <>

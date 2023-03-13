@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 
 
 
-type Props = {addProductToFavorite:(price:number) => void}
+type Props = {addProductToFavorite:(id:number) => void}
 const Podcast = ({addProductToFavorite}: Props) => {
     return (
         <>

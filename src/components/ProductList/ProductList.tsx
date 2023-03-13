@@ -7,7 +7,7 @@ import productsArray from "utils/productsArray"
 
 
 
-type Props = {addProductToFavorite:(price:number) => void}
+type Props = {addProductToFavorite:(id:number) => void}
 
 
 const ProductList = ({addProductToFavorite}: Props) => {

@@ -1,6 +1,6 @@
 import ProductList from "components/ProductList/ProductList"
 
-type Props = {addProductToFavorite:(price:number) => void}
+type Props = {addProductToFavorite:(id:number) => void}
 
 const Home = ({addProductToFavorite}: Props) => {
 return (
