@@ -19,9 +19,9 @@ return (
 <MenuItem to="/radio">RADIO</MenuItem>
 <MenuItem to="/favorite">FAVORITE</MenuItem>
 
-{Object.keys(productsInFavorite).map((productId) => (
+{Object.keys(productsInFavorite).map(() => (
 <FavoriteHeader
-productCount ={productsInFavorite[parseInt(productId)]}/>
+productCount ={productsInFavorite}/>
 ))}
 <MenuItem to="/about">ABOUT</MenuItem>
 </>
