@@ -2,9 +2,9 @@ import FavoriteCounter from '../FavoriteCounter/FavoriteCounter'
 import './Menu.scss'
 import MenuItem from './MenuItem'
 
-type Props = {}
+type Props = {addProductToFavorite:(id:number) => void}
 
-const Menu = (props: Props) => {
+const Menu = ({addProductToFavorite}: Props) => {
     return (
         <>
             <MenuItem to="/">HOME</MenuItem>
@@ -12,7 +12,7 @@ const Menu = (props: Props) => {
             <MenuItem to="/podcast">PODCAST</MenuItem>
             <MenuItem to="/radio">RADIO</MenuItem>
             <MenuItem to="/favorite">FAVORITE</MenuItem>
-            <FavoriteCounter/>
+            <FavoriteCounter addProductToFavorite={addProductToFavorite}/>
             <MenuItem to="/about">ABOUT</MenuItem>
         </>
     )
