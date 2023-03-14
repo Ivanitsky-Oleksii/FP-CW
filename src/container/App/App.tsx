@@ -41,10 +41,10 @@ const App = (props: Props) => {
     const [productsInFavorite, setProductsInFavorite] =
         useState<productsInFavorite>({})
 
-    const addProductToFavorite = (id: number) => {
+    const addProductToFavorite = (id: number,count:number) => {
         setProductsInFavorite((prevState) => ({
             ...prevState,
-            [id]: (prevState[id] || 0),
+            [id]: (prevState[id] || 0) + count,
         }))
     }
     const removeFavorite = (id: number) => {

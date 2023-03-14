@@ -12,7 +12,7 @@ type Props = {
 const Favorite = ({ productsInFavorite, removeFavorite}: Props) => {
     return (
         <>
-            <Grid item style={{height:"475px"}} xs={12} sm={6} md={4}>
+            <Grid item style={{}} xs={12} sm={6} md={4}>
                 <FavoriteList
                     productsInFavorite={productsInFavorite}
                     FavoriteItem={FavoriteListItem}

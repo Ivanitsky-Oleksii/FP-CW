@@ -4,7 +4,7 @@ import "./ProductListItem.scss"
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import NewsPage1 from "pages/News/NewsPage1";
 import Favorite from '@mui/icons-material/Favorite';
-
+import { useState } from 'react'
 
 type Props = {   
     id: number 
@@ -14,7 +14,7 @@ type Props = {
     image:string
     url:string
     link:string
-    addProductToFavorite:(id:number) => void
+    addProductToFavorite:(id:number,count:number) => void
     
 }
 
@@ -28,9 +28,19 @@ const ProductListItem = ({
     data,
     image,
     link,
-    addProductToFavorite
+    addProductToFavorite,
     
 }  : Props) => {
+
+
+    const [count,setCount] = useState<number>(1)
+
+    // const inFavorite = () => {
+    //     setCount ((prevState) => prevState)
+    // }
+
+
+
 return (
     <Card  onClick={() => NewsPage1(title)}>
         <CardContent className="card-content">
@@ -40,7 +50,7 @@ return (
             </Link>
             <div className="product-desc">{description}</div>
             <div className="product-data"> {data}</div>
-            <Button style={{marginTop:"50px",color:"red"}}color="error" size="small" variant="text" onClick={ () =>(addProductToFavorite(id))}><Checkbox  icon={<FavoriteBorder sx={{color:"red"}} />} checkedIcon={<Favorite sx={{color:"red"}}/>} /></Button>    
+            <Button style={{marginTop:"50px",color:"red"}}color="error" size="small" variant="text" onClick={ () =>{addProductToFavorite(id,count)}}><Checkbox  icon={<FavoriteBorder sx={{color:"red"}} />} checkedIcon={<Favorite sx={{color:"red"}}/>} /></Button>    
         </CardContent>
     </Card>
 )
