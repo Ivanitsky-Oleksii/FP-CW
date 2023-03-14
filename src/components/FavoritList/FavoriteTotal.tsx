@@ -13,7 +13,7 @@ productsObject?:{
 
 const FavoriteTotal = ({productsInFavorite,productsObject = getProductsObject1(productsArray)}: Props) => {
     return(
-        <div>{Object.keys(productsInFavorite).reduce((total,productId)=>(total + productsObject[parseInt(productId)].id + productsInFavorite[parseInt(productId)] ),0)}</div>
+        <div>{Object.keys(productsInFavorite).reduce((total,productId)=>(productsObject[parseInt(productId)].id ),0)}</div>
         )
     }
     export default FavoriteTotal
