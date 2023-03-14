@@ -33,11 +33,8 @@ const ProductListItem = ({
 }  : Props) => {
 
 
-    const [count,setCount] = useState<number>(1)
+    const [count] = useState<number>(1)
 
-    // const inFavorite = () => {
-    //     setCount ((prevState) => prevState)
-    // }
 
 
 
@@ -50,7 +47,7 @@ return (
             </Link>
             <div className="product-desc">{description}</div>
             <div className="product-data"> {data}</div>
-            <Button style={{marginTop:"50px",color:"red"}}color="error" size="small" variant="text" onClick={ () =>{addProductToFavorite(id,count)}}><Checkbox  icon={<FavoriteBorder sx={{color:"red"}} />} checkedIcon={<Favorite sx={{color:"red"}}/>} /></Button>    
+            <Button style={{marginTop:"50px",color:"red"}}color="error" size="small" variant="text" onClick={() =>{addProductToFavorite(id,count);}}><Checkbox  icon={<FavoriteBorder sx={{color:"red"}} />} checkedIcon={<Favorite sx={{color:"red"}}/>} /></Button>    
         </CardContent>
     </Card>
 )
