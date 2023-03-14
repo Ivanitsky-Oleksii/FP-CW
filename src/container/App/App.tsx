@@ -58,9 +58,7 @@ const App = (props: Props) => {
     
         const addProductToFavoriteHeader = (id: number,count:number) => {
             setProductsInFavoriteHeader((prevState) => 
-            ({
-                [id]: (prevState[id] || 0) + count
-            }))}    
+            ({[id]: (prevState[id] || 0) + count }))}    
 
 
 
