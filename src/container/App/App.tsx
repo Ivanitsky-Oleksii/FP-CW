@@ -36,10 +36,6 @@ type Props = {}
 type productsInFavorite = {
     [id: number]: number
 }
-type productsInFavoriteHeader = {
-    [id: number]: number
-}
-
 const App = (props: Props) => {
     const [productsInFavorite, setProductsInFavorite] =
         useState<productsInFavorite>({})
@@ -58,19 +54,19 @@ const App = (props: Props) => {
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
-            <Header productsInFavorite={productsInFavorite}/>
+            <Header productsInFavorite={productsInFavorite} removeFavorite={removeFavorite}/>
             <Carousel />
             <Container className="main-container" sx={{ padding: '0px 0' }}>
                 <Routes>
-                    <Route path="radio" element={<Radio addProductToFavorite={addProductToFavorite} />} />
+                    <Route path="radio" element={<Radio addProductToFavorite={addProductToFavorite} removeFavorite={removeFavorite}/>} />
                     <Route
                         path="/"
                         element={
-                            <Home addProductToFavorite={addProductToFavorite} />
+                            <Home addProductToFavorite={addProductToFavorite}  removeFavorite={removeFavorite} />
                         }
                     />
-                    <Route path="news" element={<News addProductToFavorite={addProductToFavorite} />} />
-                    <Route path="podcast" element={<Podcast addProductToFavorite={addProductToFavorite} />} />
+                    <Route path="news" element={<News addProductToFavorite={addProductToFavorite} removeFavorite={removeFavorite}/>} />
+                    <Route path="podcast" element={<Podcast addProductToFavorite={addProductToFavorite} removeFavorite={removeFavorite}/>} />
                     <Route
                         path="favorite"
                         element={

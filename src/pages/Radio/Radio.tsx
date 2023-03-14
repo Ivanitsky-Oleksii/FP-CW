@@ -8,9 +8,10 @@ import {Link} from 'react-router-dom'
 
 
 type Props = {addProductToFavorite:(id:number,count:number) => void
+    removeFavorite: (id: number) => void
     
 }
-const Radio = ({addProductToFavorite}: Props) => {
+const Radio = ({addProductToFavorite,removeFavorite}: Props) => {
     return (
         <>
             <Typography
@@ -25,11 +26,12 @@ const Radio = ({addProductToFavorite}: Props) => {
             <Grid container spacing={1}>
                 {radioArray.map(
                     (
-                        { id,title, description, data, image,url,link},
-                        i) => (
+                        { id,title, description, data, image,url,link}
+                        ) => (
                         <Grid item xs={12} sm={12} md={15} key={id}>
                             
                             <ProductListItem
+                            removeFavorite={removeFavorite}
                             addProductToFavorite={addProductToFavorite}
                                 id={id}
                                 title={title}
@@ -38,6 +40,7 @@ const Radio = ({addProductToFavorite}: Props) => {
                                 image={image}
                                 url={url}
                                 link={link}
+                                
                             
                                 />
                                 

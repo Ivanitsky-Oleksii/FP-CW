@@ -1,10 +1,10 @@
 import { Card,CardContent,Button,Checkbox} from "@mui/material"
 import {Link} from 'react-router-dom'
 import "./ProductListItem.scss"
-import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import NewsPage1 from "pages/News/NewsPage1";
-import Favorite from '@mui/icons-material/Favorite';
 import { useState } from 'react'
+import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
+import ThumbDownIcon from '@mui/icons-material/ThumbDown';
 
 type Props = {   
     id: number 
@@ -15,7 +15,8 @@ type Props = {
     url:string
     link:string
     addProductToFavorite:(id:number,count:number) => void
-
+    
+    removeFavorite: (id: number) => void
 }
 
 
@@ -29,16 +30,11 @@ const ProductListItem = ({
     image,
     link,
     addProductToFavorite,
+    removeFavorite
     
     
 }  : Props) => {
-
-
     const [count] = useState<number>(1)
-
-
-
-
 return (
     <Card  onClick={() => NewsPage1(title)}>
         <CardContent className="card-content">
@@ -48,7 +44,8 @@ return (
             </Link>
             <div className="product-desc">{description}</div>
             <div className="product-data"> {data}</div>
-            <Button style={{marginTop:"50px",color:"red"}}color="error" size="small" variant="text" onClick={() =>{addProductToFavorite(id,count)}}><Checkbox  icon={<FavoriteBorder sx={{color:"red"}} />} checkedIcon={<Favorite sx={{color:"red"}}/>} /></Button>    
+            <Button style={{marginTop:"50px",color:"red"}}color="error" size="small" variant="text" onClick={() =>{addProductToFavorite(id,count)}}><ThumbUpAltIcon/></Button>
+            <Button style={{marginTop:"0px",color:"black"}}color="error" size="small" variant="text" onClick={() =>{removeFavorite(id)}}><ThumbDownIcon/></Button>    
         </CardContent>
     </Card>
 )

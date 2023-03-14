@@ -1,8 +1,8 @@
 import { Product1 } from "utils/productsArray"
-import {  Card, CardContent, Button} from '@mui/material'
+import {  Card, CardContent, Button,Stack} from '@mui/material'
 import "./Favorite.scss"
 import { Link } from 'react-router-dom'
-import HeartBrokenIcon from '@mui/icons-material/HeartBroken';
+import ThumbDownIcon from '@mui/icons-material/ThumbDown';
 
 
 type Props = {
@@ -10,6 +10,7 @@ type Props = {
     removeFavorite: (id: number) => void
     id: number
     link2:string
+
 }
 
 const FavoriteListItem1 = ({product1,removeFavorite}:Props) => {
@@ -23,14 +24,16 @@ const FavoriteListItem1 = ({product1,removeFavorite}:Props) => {
                     <Link className="back-btn" to={product1.link2} >
                     <div>{product1.title}</div>
                     </Link>
-                    <Button
-                        style={{marginTop:"50px",color:"red"}}
-                        startIcon={<HeartBrokenIcon fontSize="inherit" />}
-                        variant="text"
-                        size="large"
-                        onClick={() => removeFavorite(product1.id)}>
-                    
-                    </Button>
+                    <Stack
+                direction="row-reverse"
+                justifyContent="center"
+                alignItems="center"
+                spacing={5}
+                margin="10px"
+            >
+                    <div className="product-desc">{product1.description}</div>
+                    </Stack>
+                    <Button style={{marginTop:"0px",color:"black"}}color="error" size="small" variant="text" onClick={() =>removeFavorite(product1.id)}><ThumbDownIcon/></Button>
                 </CardContent>
             </Card>
     </>

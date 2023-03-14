@@ -8,8 +8,9 @@ import {Link} from 'react-router-dom'
 
 
 type Props = {addProductToFavorite:(id:number,count:number) => void
+    removeFavorite: (id: number) => void
 }
-const Podcast = ({addProductToFavorite}: Props) => {
+const Podcast = ({addProductToFavorite,removeFavorite}: Props) => {
     return (
         <>
             <Typography
@@ -24,11 +25,12 @@ const Podcast = ({addProductToFavorite}: Props) => {
             <Grid container spacing={1}>
                 {podcastArray.map(
                     (
-                        { id,title, description, data, image,url,link},
-                        i) => (
+                        { id,title, description, data, image,url,link}
+                        ) => (
                         <Grid item xs={12} sm={12} md={15} key={id}>
                             
                             <ProductListItem
+                            removeFavorite={removeFavorite}
                             addProductToFavorite={addProductToFavorite}
                                 id={id}
                                 title={title}
@@ -37,6 +39,7 @@ const Podcast = ({addProductToFavorite}: Props) => {
                                 image={image}
                                 url={url}
                                 link={link}
+                                
                                 
                                 />
                                 

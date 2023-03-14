@@ -7,6 +7,7 @@ export type Product1 = {
     url:string
     link:string
     link2:string
+
 }
 
 const productsArray: Product1[] = [
@@ -22,7 +23,8 @@ const productsArray: Product1[] = [
         image:"/images/1.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"npage1",
-        link2:"../npage1"
+        link2:"../npage1",
+
     },
     {
         id:2,
@@ -36,7 +38,8 @@ const productsArray: Product1[] = [
         image:"/images/2.jpg",
         url:"https://asot749.lnk.to/SomedayAW",
         link:"npage2",
-        link2:"../npage2"
+        link2:"../npage2",
+
     },
     {
         id:3,
@@ -49,7 +52,8 @@ const productsArray: Product1[] = [
         image:"/images/3.jpg",
         url:"https://avbsc.lnk.to/DayglowAW",
         link:"npage3",
-        link2:"../npage3"
+        link2:"../npage3",
+ 
     },
     {
         id:4,
@@ -62,7 +66,8 @@ const productsArray: Product1[] = [
         image:"/images/4.jpg",
         url:"https://asot743.lnk.to/DistantDreamsAW",
         link:"npage4",
-        link2:"../npage4"
+        link2:"../npage4",
+
     },
     {
         id:5,
@@ -75,7 +80,8 @@ const productsArray: Product1[] = [
         image:"/images/5.jpg",
         url:"https://wao138375.lnk.to/ColorfulSunriseAW",
         link:"npage5",
-        link2:"../npage5"
+        link2:"../npage5",
+  
     },
     {
         id:6,
@@ -88,11 +94,12 @@ const productsArray: Product1[] = [
         image:"/images/6.jpg",
         url:"https://armd1704.lnk.to/LoveLikeWereDyingAW",
         link:"npage6",
-        link2:"../npage6"
+        link2:"../npage6",
+
     },
     {
         id:7,
-        title: 'GUEST: Laura van Dam ',
+        title: 'Laura van Dam ',
 
         description: 'PODCAST',
 
@@ -102,11 +109,12 @@ const productsArray: Product1[] = [
         image:"/images/27.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"ppage1",
-        link2:"../ppage1"
+        link2:"../ppage1",
+
     },
     {
         id:8,
-        title: 'GUEST: Giuseppe Ottaviani  ',
+        title: ' Giuseppe Ottaviani  ',
 
         description: 'PODCAST',
 
@@ -116,11 +124,12 @@ const productsArray: Product1[] = [
         image:"/images/13.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"ppage2",
-        link2:"../ppage2"
+        link2:"../ppage2",
+
     },
     {
         id:9,
-        title: 'GUEST: Maarten de Jong  ',
+        title: 'Maarten de Jong  ',
 
         description: 'PODCAST',
 
@@ -129,11 +138,12 @@ const productsArray: Product1[] = [
         image:"/images/26.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"ppage3",
-        link2:"../ppage3"
+        link2:"../ppage3",
+
     },
     {
         id:10,
-        title: 'GUEST: Aly & Fila  ',
+        title: 'Aly & Fila  ',
 
         description: 'PODCAST',
 
@@ -142,11 +152,12 @@ const productsArray: Product1[] = [
         image:"/images/28.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"ppage4",
-        link2:"../ppage4"
+        link2:"../ppage4",
+
     },
     {
         id:11,
-        title: 'GUEST: Dennis Sheperd  ',
+        title: 'Dennis Sheperd  ',
 
         description: 'PODCAST',
 
@@ -155,11 +166,12 @@ const productsArray: Product1[] = [
         image:"/images/24.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"ppage5",
-        link2:"../ppage5"
+        link2:"../ppage5",
+
     },
     {
         id:12,
-        title: 'GUEST: Ciaran McAuley  ',
+        title: ' Ciaran McAuley  ',
 
         description: 'PODCAST',
 
@@ -168,7 +180,8 @@ const productsArray: Product1[] = [
         image:"/images/25.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"ppage6",
-        link2:"../ppage6"
+        link2:"../ppage6",
+
     },
     {
         id:13,
@@ -182,7 +195,8 @@ const productsArray: Product1[] = [
         image:"/images/30.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"rpage1",
-        link2:"../rpage1"
+        link2:"../rpage1",
+
     },
     {
         id:14,
@@ -196,7 +210,8 @@ const productsArray: Product1[] = [
         image:"/images/29.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"rpage2",
-        link2:"../rpage2"
+        link2:"../rpage2",
+
     },
     {
         id:15,
@@ -209,7 +224,8 @@ const productsArray: Product1[] = [
         image:"/images/31.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"rpage3",
-        link2:"../rpage3"
+        link2:"../rpage3",
+
     },
     {
         id:16,
@@ -222,7 +238,8 @@ const productsArray: Product1[] = [
         image:"/images/21.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"rpage4",
-        link2:"../rpage4"
+        link2:"../rpage4",
+
     },
     {
         id:17,
@@ -235,7 +252,8 @@ const productsArray: Product1[] = [
         image:"/images/23.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"rpage5",
-        link2:"../rpage5"
+        link2:"../rpage5",
+
     },
     {
         id:18,
@@ -248,7 +266,8 @@ const productsArray: Product1[] = [
         image:"/images/20.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"rpage6",
-        link2:"../rpage6"
+        link2:"../rpage6",
+
     },
 ] 
 

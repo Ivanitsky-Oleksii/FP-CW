@@ -1,34 +1,19 @@
-import FavoriteCounter from '../FavoriteCounter/FavoriteCounter'
 import './Menu.scss'
 import MenuItem from './MenuItem'
-import productsArray, { getProductsObject1, Product1 } from "utils/productsArray"
 
-type Props = {productsInFavorite: {
-    [id: number]: number 
-}
-productsObject?:{
-    [id:number] : Product1
-}
-FavoriteItem?:any
+
+type Props = {
 }
 
 
-const Menu = ({productsInFavorite,productsObject = getProductsObject1(productsArray)}: Props) => {
+const Menu = (props: Props) => {
     return (
         <>
             <MenuItem to="/">HOME</MenuItem>
             <MenuItem to="/news">NEWS</MenuItem>
             <MenuItem to="/podcast">PODCAST</MenuItem>
             <MenuItem to="/radio">RADIO</MenuItem>
-            <MenuItem to="/favorite">FAVORITE</MenuItem>
-            {Object.keys(productsInFavorite).map((productId) => (
-            <FavoriteCounter 
-            key={productId}
-            product={productsObject[parseInt(productId)]}
-            productCount ={productsInFavorite[parseInt(productId)]}/>
-        
-        ))}
-            <MenuItem to="/about">ABOUT</MenuItem>
+            <MenuItem to="/favorite">YOU LIKE </MenuItem> 
         </>
     )
 }

@@ -6,8 +6,9 @@ import { Link } from 'react-router-dom'
 
 
 type Props = {addProductToFavorite:(id:number,count:number) => void
+    removeFavorite: (id: number) => void
 }
-const News = ({addProductToFavorite}: Props) => {
+const News = ({addProductToFavorite,removeFavorite}: Props) => {
     return (
         <>
             <Typography
@@ -21,10 +22,11 @@ const News = ({addProductToFavorite}: Props) => {
 
             <Grid container spacing={1}>
                 {newsArray.map(
-                    ({ id, title, description, data, image, url, link }, i) => (
+                    ({ id, title, description, data, image, url, link}) => (
                         <Grid item xs={12} sm={12} md={15} key={id}>
                             <ProductListItem
                             addProductToFavorite={addProductToFavorite}
+                            removeFavorite={removeFavorite}
                                 id={id}
                                 title={title}
                                 description={description}
@@ -32,6 +34,7 @@ const News = ({addProductToFavorite}: Props) => {
                                 image={image}
                                 url={url}
                                 link={link}
+                                
                             />
                         </Grid>
                     )

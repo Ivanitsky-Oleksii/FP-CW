@@ -6,11 +6,12 @@ type Product = {
     image:string
     url:string
     link:string
+
 }
 
 const productsArray3: Product[] = [
     {
-        id:1,
+        id:13,
         title: 'ASOT 1108',
 
         description: 'RELEASES',
@@ -20,10 +21,11 @@ const productsArray3: Product[] = [
         
         image:"/images/30.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"../rpage1"
+        link:"../rpage1",
+
     },
     {
-        id:2,
+        id:14,
         title: 'ASOT 1107 ',
 
         description: 'RELEASES',
@@ -33,10 +35,11 @@ const productsArray3: Product[] = [
     
         image:"/images/29.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"../rpage2"
+        link:"../rpage2",
+
     },
     {
-        id:3,
+        id:15,
         title: 'ASOT 1106',
 
         description: 'RELEASES',
@@ -45,10 +48,11 @@ const productsArray3: Product[] = [
 
         image:"/images/31.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"../rpage3"
+        link:"../rpage3",
+
     },
     {
-        id:4,
+        id:16,
         title: 'GAIA: Tuvan (AVIRA Remix)',
 
         description: 'RELEASES',
@@ -57,10 +61,11 @@ const productsArray3: Product[] = [
 
         image:"/images/21.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"../rpage4"
+        link:"../rpage4",
+
     },
     {
-        id:5,
+        id:17,
         title: 'UDM: Colorful Sunrise',
 
         description: 'RELEASES',
@@ -69,10 +74,11 @@ const productsArray3: Product[] = [
 
         image:"/images/23.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"../rpage5"
+        link:"../rpage5",
+
     },
     {
-        id:6,
+        id:18,
         title: 'Lange pres. Firewall: Sincere',
 
         description: 'RELEASES',
@@ -81,7 +87,8 @@ const productsArray3: Product[] = [
         
         image:"/images/20.jpg",
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"../rpage6"
+        link:"../rpage6",
+
     },
 ] 
 export default productsArray3

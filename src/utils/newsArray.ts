@@ -6,6 +6,7 @@ export type Product = {
     image:string
     url:string
     link:string
+
 }
 
 const productsArray4: Product[] = [
@@ -21,7 +22,8 @@ const productsArray4: Product[] = [
         image:"/images/1.jpg",
         
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"../npage1"
+        link:"../npage1",
+
         
     },
     {
@@ -36,7 +38,8 @@ const productsArray4: Product[] = [
         image:"/images/2.jpg",
         
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"../npage2"
+        link:"../npage2",
+
         
     },
     {
@@ -50,7 +53,8 @@ const productsArray4: Product[] = [
         image:"/images/3.jpg",
         
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"../npage3"
+        link:"../npage3",
+
         
     },
     {
@@ -64,7 +68,8 @@ const productsArray4: Product[] = [
         image:"/images/4.jpg",
         
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"../npage4"
+        link:"../npage4",
+
 
     },
     {
@@ -78,7 +83,8 @@ const productsArray4: Product[] = [
         image:"/images/5.jpg",
         
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"../npage5"
+        link:"../npage5",
+
 
     },
     {
@@ -92,7 +98,8 @@ const productsArray4: Product[] = [
         image:"/images/6.jpg",
         
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
-        link:"../npage6"
+        link:"../npage6",
+
     },
 ] 
 export const getProductsObject = (array:Product[]) =>
