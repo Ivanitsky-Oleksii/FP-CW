@@ -15,7 +15,6 @@ type Props = {
     url:string
     link:string
     addProductToFavorite:(id:number,count:number) => void
-    
     removeFavorite: (id: number) => void
 }
 
@@ -30,7 +29,7 @@ const ProductListItem = ({
     image,
     link,
     addProductToFavorite,
-    removeFavorite
+    removeFavorite,
     
     
 }  : Props) => {
@@ -44,7 +43,7 @@ return (
             </Link>
             <div className="product-desc">{description}</div>
             <div className="product-data"> {data}</div>
-            <Button style={{marginTop:"50px",color:"red"}}color="error" size="small" variant="text" onClick={() =>{addProductToFavorite(id,count)}}><ThumbUpAltIcon/></Button>
+            <Button style={{marginTop:"50px",color:"red"}}color="error" size="small" variant="text" onClick={() =>{addProductToFavorite(id,count)} }><ThumbUpAltIcon/></Button>
             <Button style={{marginTop:"0px",color:"black"}}color="error" size="small" variant="text" onClick={() =>{removeFavorite(id)}}><ThumbDownIcon/></Button>    
         </CardContent>
     </Card>
