@@ -7,8 +7,10 @@ import {Link} from 'react-router-dom'
 
 
 
-type Props = {addProductToFavorite:(id:number,count:number) => void}
-const Radio = ({addProductToFavorite}: Props) => {
+type Props = {addProductToFavorite:(id:number,count:number) => void
+    addProductToFavoriteHeader: (id: number,count:number) => void
+}
+const Radio = ({addProductToFavorite,addProductToFavoriteHeader}: Props) => {
     return (
         <>
             <Typography
@@ -29,6 +31,7 @@ const Radio = ({addProductToFavorite}: Props) => {
                             
                             <ProductListItem
                             addProductToFavorite={addProductToFavorite}
+                            addProductToFavoriteHeader={addProductToFavoriteHeader}
                                 id={id}
                                 title={title}
                                 description={description}

@@ -1,11 +1,12 @@
 import ProductList from "components/ProductList/ProductList"
 
-type Props = {addProductToFavorite:(id:number,count:number) => void}
+type Props = {addProductToFavorite:(id:number,count:number) => void
+    addProductToFavoriteHeader:(id:number,count:number) => void}
 
-const Home = ({addProductToFavorite}: Props) => {
+const Home = ({addProductToFavorite,addProductToFavoriteHeader}: Props) => {
 return (
 <div>
-<ProductList addProductToFavorite={addProductToFavorite}/>
+<ProductList addProductToFavorite={addProductToFavorite} addProductToFavoriteHeader={addProductToFavoriteHeader}/>
 </div>
 )
 }

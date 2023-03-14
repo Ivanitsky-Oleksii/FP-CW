@@ -7,10 +7,12 @@ import productsArray from "utils/productsArray"
 
 
 
-type Props = {addProductToFavorite:(id:number,count:number) => void}
+type Props = {addProductToFavorite:(id:number,count:number) => void
+    addProductToFavoriteHeader:(id:number,count:number) => void
+}
 
 
-const ProductList = ({addProductToFavorite}: Props) => {
+const ProductList = ({addProductToFavorite,addProductToFavoriteHeader}: Props) => {
 return (
     <>
         <Grid container spacing={5}>
@@ -20,6 +22,7 @@ return (
                             id={id}
                             title={title}
                             description={description}
+                            addProductToFavoriteHeader={addProductToFavoriteHeader}
                             addProductToFavorite={addProductToFavorite}
                             data={data}
                             image={image}

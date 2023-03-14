@@ -5,8 +5,9 @@ import newsArray from 'utils/newsArray'
 import { Link } from 'react-router-dom'
 
 
-type Props = {addProductToFavorite:(id:number,count:number) => void}
-const News = ({addProductToFavorite}: Props) => {
+type Props = {addProductToFavorite:(id:number,count:number) => void
+    addProductToFavoriteHeader:(id:number,count:number) => void}
+const News = ({addProductToFavorite,addProductToFavoriteHeader}: Props) => {
     return (
         <>
             <Typography
@@ -23,6 +24,7 @@ const News = ({addProductToFavorite}: Props) => {
                     ({ id, title, description, data, image, url, link }, i) => (
                         <Grid item xs={12} sm={12} md={15} key={id}>
                             <ProductListItem
+                            addProductToFavoriteHeader={addProductToFavoriteHeader}
                             addProductToFavorite={addProductToFavorite}
                                 id={id}
                                 title={title}

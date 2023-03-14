@@ -15,7 +15,7 @@ type Props = {
     url:string
     link:string
     addProductToFavorite:(id:number,count:number) => void
-    
+    addProductToFavoriteHeader:(id:number,count:number) => void
 }
 
 
@@ -29,6 +29,7 @@ const ProductListItem = ({
     image,
     link,
     addProductToFavorite,
+    addProductToFavoriteHeader,
     
 }  : Props) => {
 
@@ -47,7 +48,7 @@ return (
             </Link>
             <div className="product-desc">{description}</div>
             <div className="product-data"> {data}</div>
-            <Button style={{marginTop:"50px",color:"red"}}color="error" size="small" variant="text" onClick={() =>{addProductToFavorite(id,count);}}><Checkbox  icon={<FavoriteBorder sx={{color:"red"}} />} checkedIcon={<Favorite sx={{color:"red"}}/>} /></Button>    
+            <Button style={{marginTop:"50px",color:"red"}}color="error" size="small" variant="text" onClick={() =>{addProductToFavorite(id,count);addProductToFavoriteHeader(id,count)}}><Checkbox  icon={<FavoriteBorder sx={{color:"red"}} />} checkedIcon={<Favorite sx={{color:"red"}}/>} /></Button>    
         </CardContent>
     </Card>
 )

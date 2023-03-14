@@ -36,6 +36,9 @@ type Props = {}
 type productsInFavorite = {
     [id: number]: number
 }
+type productsInFavoriteHeader = {
+    [id: number]: number
+}
 
 const App = (props: Props) => {
     const [productsInFavorite, setProductsInFavorite] =
@@ -45,8 +48,23 @@ const App = (props: Props) => {
         setProductsInFavorite((prevState) => ({
             ...prevState,
             [id]: (prevState[id] || 0) + count,
-        }))
-    }
+        }))}
+    
+    
+    
+        const [productsInFavoriteHeader, setProductsInFavoriteHeader] =
+        useState<productsInFavoriteHeader>({})
+    
+    
+        const addProductToFavoriteHeader = (id: number,count:number) => {
+            setProductsInFavoriteHeader((prevState) => 
+            ({
+                [id]: (prevState[id] || 0) + count
+            }))}    
+
+
+
+
     const removeFavorite = (id: number) => {
         setProductsInFavorite((prevState) => omit(prevState, [id]))
     }
@@ -54,24 +72,24 @@ const App = (props: Props) => {
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
-            <Header productsInFavorite={productsInFavorite}/>
+            <Header productsInFavoriteHeader={productsInFavoriteHeader}/>
             <Carousel />
             <Container className="main-container" sx={{ padding: '0px 0' }}>
                 <Routes>
-                    <Route path="radio" element={<Radio addProductToFavorite={addProductToFavorite}/>} />
+                    <Route path="radio" element={<Radio addProductToFavorite={addProductToFavorite} addProductToFavoriteHeader={addProductToFavoriteHeader}/>} />
                     <Route
                         path="/"
                         element={
-                            <Home addProductToFavorite={addProductToFavorite} />
+                            <Home addProductToFavorite={addProductToFavorite} addProductToFavoriteHeader={addProductToFavoriteHeader}/>
                         }
                     />
-                    <Route path="news" element={<News addProductToFavorite={addProductToFavorite}/>} />
-                    <Route path="podcast" element={<Podcast addProductToFavorite={addProductToFavorite}/>} />
+                    <Route path="news" element={<News addProductToFavorite={addProductToFavorite} addProductToFavoriteHeader={addProductToFavoriteHeader}/>} />
+                    <Route path="podcast" element={<Podcast addProductToFavorite={addProductToFavorite} addProductToFavoriteHeader={addProductToFavoriteHeader}/>} />
                     <Route
                         path="favorite"
                         element={
                             <Favorite
-                                productsInFavorite={productsInFavorite}
+                            productsInFavorite={productsInFavorite}
                                 removeFavorite={removeFavorite}
                             />
                         }
