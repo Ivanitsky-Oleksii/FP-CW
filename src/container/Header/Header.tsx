@@ -8,12 +8,12 @@ import Menu from 'components/Menu/Menu'
 
 
 
-type Props = {productsInFavoriteHeader: {
+type Props = {productsInFavorite: {
     [id: number]: number 
 }}
 
 
-const Header = ({productsInFavoriteHeader}: Props) => {
+const Header = ({productsInFavorite}: Props) => {
     return (
         <AppBar position="static" className="app-bar">
             <Container>
@@ -27,7 +27,7 @@ const Header = ({productsInFavoriteHeader}: Props) => {
                     >
                         <Logo />
 
-                        <Menu productsInFavoriteHeader={productsInFavoriteHeader}/>
+                        <Menu productsInFavorite={productsInFavorite}/>
                     </IconButton>
                 </Toolbar>
             </Container>

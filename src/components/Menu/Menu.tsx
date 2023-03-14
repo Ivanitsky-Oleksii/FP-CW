@@ -3,7 +3,7 @@ import './Menu.scss'
 import MenuItem from './MenuItem'
 import productsArray, { getProductsObject1, Product1 } from "utils/productsArray"
 
-type Props = {productsInFavoriteHeader: {
+type Props = {productsInFavorite: {
     [id: number]: number 
 }
 productsObject?:{
@@ -13,7 +13,7 @@ FavoriteItem?:any
 }
 
 
-const Menu = ({productsInFavoriteHeader,productsObject = getProductsObject1(productsArray)}: Props) => {
+const Menu = ({productsInFavorite,productsObject = getProductsObject1(productsArray)}: Props) => {
     return (
         <>
             <MenuItem to="/">HOME</MenuItem>
@@ -21,11 +21,11 @@ const Menu = ({productsInFavoriteHeader,productsObject = getProductsObject1(prod
             <MenuItem to="/podcast">PODCAST</MenuItem>
             <MenuItem to="/radio">RADIO</MenuItem>
             <MenuItem to="/favorite">FAVORITE</MenuItem>
-            {Object.keys(productsInFavoriteHeader).map((productId) => (
+            {Object.keys(productsInFavorite).map((productId) => (
             <FavoriteCounter 
             key={productId}
             product={productsObject[parseInt(productId)]}
-            productCount ={productsInFavoriteHeader[parseInt(productId)]}/>
+            productCount ={productsInFavorite[parseInt(productId)]}/>
         
         ))}
             <MenuItem to="/about">ABOUT</MenuItem>

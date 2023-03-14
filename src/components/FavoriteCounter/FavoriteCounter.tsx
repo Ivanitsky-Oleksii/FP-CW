@@ -9,14 +9,14 @@ type Props = {
 
 
 
-const FavoriteCounter = ({productCount}: Props) => {
+const FavoriteCounter = ({product}: Props) => {
 
 
 
 
 return (
     <>
-    <div className='counter'>{productCount}</div>
+    <div className='counter'>{product.id}</div>
     </>
 )
 }

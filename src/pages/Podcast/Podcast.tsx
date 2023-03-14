@@ -8,8 +8,8 @@ import {Link} from 'react-router-dom'
 
 
 type Props = {addProductToFavorite:(id:number,count:number) => void
-    addProductToFavoriteHeader:(id:number,count:number) => void}
-const Podcast = ({addProductToFavorite,addProductToFavoriteHeader}: Props) => {
+}
+const Podcast = ({addProductToFavorite}: Props) => {
     return (
         <>
             <Typography
@@ -30,7 +30,6 @@ const Podcast = ({addProductToFavorite,addProductToFavoriteHeader}: Props) => {
                             
                             <ProductListItem
                             addProductToFavorite={addProductToFavorite}
-                            addProductToFavoriteHeader={addProductToFavoriteHeader}
                                 id={id}
                                 title={title}
                                 description={description}
