@@ -1,8 +1,12 @@
+@media (max-width: 768px ){
 .counter{
-    width: 30px;
-    height: 30px;
-    color: white;
-    background-color: red;
-    border-radius: 50px;
-
+    visibility: hiden;}
 }
+@media (min-width: 769px) {
+    .counter{
+        width: 30px;
+        height: 30px;
+        color: white;
+        background-color: red;
+        border-radius: 50px;}
+    }
