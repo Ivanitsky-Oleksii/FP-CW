@@ -7,6 +7,7 @@ export type Product1 = {
     url:string
     link:string
     link2:string
+    price:number
 
 }
 
@@ -24,6 +25,7 @@ const productsArray: Product1[] = [
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"npage1",
         link2:"../npage1",
+        price:1
 
     },
     {
@@ -39,6 +41,7 @@ const productsArray: Product1[] = [
         url:"https://asot749.lnk.to/SomedayAW",
         link:"npage2",
         link2:"../npage2",
+        price:1
 
     },
     {
@@ -53,6 +56,7 @@ const productsArray: Product1[] = [
         url:"https://avbsc.lnk.to/DayglowAW",
         link:"npage3",
         link2:"../npage3",
+        price:1
  
     },
     {
@@ -67,6 +71,7 @@ const productsArray: Product1[] = [
         url:"https://asot743.lnk.to/DistantDreamsAW",
         link:"npage4",
         link2:"../npage4",
+        price:1
 
     },
     {
@@ -81,6 +86,7 @@ const productsArray: Product1[] = [
         url:"https://wao138375.lnk.to/ColorfulSunriseAW",
         link:"npage5",
         link2:"../npage5",
+        price:1
   
     },
     {
@@ -95,6 +101,7 @@ const productsArray: Product1[] = [
         url:"https://armd1704.lnk.to/LoveLikeWereDyingAW",
         link:"npage6",
         link2:"../npage6",
+        price:1
 
     },
     {
@@ -110,6 +117,7 @@ const productsArray: Product1[] = [
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"ppage1",
         link2:"../ppage1",
+        price:1
 
     },
     {
@@ -125,6 +133,7 @@ const productsArray: Product1[] = [
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"ppage2",
         link2:"../ppage2",
+        price:1
 
     },
     {
@@ -139,6 +148,7 @@ const productsArray: Product1[] = [
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"ppage3",
         link2:"../ppage3",
+        price:1
 
     },
     {
@@ -153,6 +163,7 @@ const productsArray: Product1[] = [
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"ppage4",
         link2:"../ppage4",
+        price:1
 
     },
     {
@@ -167,6 +178,7 @@ const productsArray: Product1[] = [
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"ppage5",
         link2:"../ppage5",
+        price:1
 
     },
     {
@@ -181,6 +193,7 @@ const productsArray: Product1[] = [
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"ppage6",
         link2:"../ppage6",
+        price:1
 
     },
     {
@@ -196,6 +209,7 @@ const productsArray: Product1[] = [
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"rpage1",
         link2:"../rpage1",
+        price:1
 
     },
     {
@@ -211,6 +225,7 @@ const productsArray: Product1[] = [
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"rpage2",
         link2:"../rpage2",
+        price:1
 
     },
     {
@@ -225,6 +240,7 @@ const productsArray: Product1[] = [
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"rpage3",
         link2:"../rpage3",
+        price:1
 
     },
     {
@@ -239,6 +255,7 @@ const productsArray: Product1[] = [
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"rpage4",
         link2:"../rpage4",
+        price:1
 
     },
     {
@@ -253,6 +270,7 @@ const productsArray: Product1[] = [
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"rpage5",
         link2:"../rpage5",
+        price:1
 
     },
     {
@@ -267,6 +285,7 @@ const productsArray: Product1[] = [
         url:"https://wao138377.lnk.to/TheGodsDiscoAW",
         link:"rpage6",
         link2:"../rpage6",
+        price:1
 
     },
 ] 
