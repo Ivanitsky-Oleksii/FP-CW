@@ -4,9 +4,13 @@
 }
 @media (min-width: 769px) {
     .counter{
-        width: 30px;
-        height: 30px;
+        align-items: center;
+        width: 18px;
+        height: 18px;
         color: white;
-        background-color: red;
-        border-radius: 50px;}
+        background-color: rgba(255, 0, 0, 0.507);
+        border-radius: 50px;
+        font-size: 15px;
+        text-shadow: 1px 4px 5px rgb(0, 0, 0)
+    }
     }
